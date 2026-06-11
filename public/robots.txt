@@ -1,0 +1,65 @@
+# ── Bulkcell Trading Company — robots.txt ──
+# Sitemap: https://bulkcell.com.ng/sitemap.xml
+
+# ── Search Engine Crawlers (Allow Full Access) ──
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+# ── AI Training Crawlers (Blocked — our product data is proprietary) ──
+
+# OpenAI — model training
+User-agent: GPTBot
+Disallow: /
+
+# OpenAI — real-time browsing (ChatGPT citations)
+User-agent: ChatGPT-User
+Disallow: /
+
+# Anthropic — Claude model training
+User-agent: ClaudeBot
+Disallow: /
+
+# Google — Gemini training (NOT Google Search)
+User-agent: Google-Extended
+Disallow: /
+
+# Perplexity — search index + training
+User-agent: PerplexityBot
+Disallow: /
+
+# ByteDance — model training
+User-agent: Bytespider
+Disallow: /
+
+# Common Crawl — open dataset
+User-agent: CCBot
+Disallow: /
+
+# Apple — Apple Intelligence training
+User-agent: Applebot-Extended
+Disallow: /
+
+# Meta — LLaMA training
+User-agent: MetaBot
+Disallow: /
+
+# ── Catch-all: allow everything else ──
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /api/
