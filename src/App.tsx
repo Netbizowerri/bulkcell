@@ -15,7 +15,7 @@ import ChatBot from './components/ChatBot';
 const CART_STORAGE_KEY = 'bulkcell_cart_inventory_30';
 
 export default function App() {
-  // Hash-synced client-side routing
+  // History-based client-side routing (Browser Router style)
   const [activePage, setActivePage] = useState<string>('home');
   const [isCartOpen, setIsCartOpen] = useState<boolean>(false);
   
@@ -42,34 +42,29 @@ export default function App() {
     localStorage.setItem(CART_STORAGE_KEY, JSON.stringify(cart));
   }, [cart]);
 
-  // Listen to browser back/forward navigation hash changes
+  // Listen to browser back/forward navigation via popstate
   useEffect(() => {
-    const handleHashChange = () => {
-      const rawHash = window.location.hash.replace('#/', '');
+    const syncPageFromPath = () => {
+      const path = window.location.pathname.replace(/^\/+/, '') || 'home';
       const validPages = ['home', 'shop', 'hot-deals', 'about', 'contact'];
-      if (validPages.includes(rawHash)) {
-        setActivePage(rawHash);
+      if (validPages.includes(path)) {
+        setActivePage(path);
       } else {
-        // Default fallback
-        window.location.hash = '#/home';
+        window.history.replaceState({}, '', '/home');
         setActivePage('home');
       }
     };
 
-    // Initialize and bind
-    if (!window.location.hash) {
-      window.location.hash = '#/home';
-    } else {
-      handleHashChange();
-    }
+    // Initialize from current URL path
+    syncPageFromPath();
 
-    window.addEventListener('hashchange', handleHashChange);
-    return () => window.removeEventListener('hashchange', handleHashChange);
+    window.addEventListener('popstate', syncPageFromPath);
+    return () => window.removeEventListener('popstate', syncPageFromPath);
   }, []);
 
-  // Helper to change page and update address bar hash
+  // Helper to change page and update address bar path (Browser Router style)
   const navigateTo = (pageId: string) => {
-    window.location.hash = `#/${pageId}`;
+    window.history.pushState({}, '', `/${pageId}`);
     setActivePage(pageId);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };

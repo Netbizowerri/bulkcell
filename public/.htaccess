@@ -1,5 +1,13 @@
 # ── Bulkcell Trading Company — .htaccess ──
 
+# Enable rewrites
+RewriteEngine On
+
+# ── SPA fallback — serve index.html for all non-file/non-directory routes ──
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.html [L]
+
 # Security Headers
 <IfModule mod_headers.c>
   # HSTS — force HTTPS (uncomment when HTTPS is live)
