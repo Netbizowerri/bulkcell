@@ -6,6 +6,10 @@ import Shop from './pages/Shop';
 import HotDeals from './pages/HotDeals';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import Privacy from './pages/Privacy';
+import Terms from './pages/Terms';
+import Returns from './pages/Returns';
+import Shipping from './pages/Shipping';
 import QuoteEstimator, { CartItem } from './components/QuoteEstimator';
 import { PRODUCTS, Product } from './data/products';
 import { Phone, Bot, Award, Building, MapPin } from 'lucide-react';
@@ -46,7 +50,7 @@ export default function App() {
   useEffect(() => {
     const syncPageFromPath = () => {
       const path = window.location.pathname.replace(/^\/+/, '') || 'home';
-      const validPages = ['home', 'shop', 'hot-deals', 'about', 'contact'];
+      const validPages = ['home', 'shop', 'hot-deals', 'about', 'contact', 'privacy', 'terms', 'returns', 'shipping'];
       if (validPages.includes(path)) {
         setActivePage(path);
       } else {
@@ -137,6 +141,14 @@ export default function App() {
         return <About />;
       case 'contact':
         return <Contact />;
+      case 'privacy':
+        return <Privacy />;
+      case 'terms':
+        return <Terms />;
+      case 'returns':
+        return <Returns />;
+      case 'shipping':
+        return <Shipping />;
       default:
         return <Home setActivePage={navigateTo} onSelectBrand={setShopBrandTab} onAddToQuote={handleAddToQuote} />;
     }

@@ -146,13 +146,24 @@ export default function Footer({ setActivePage }: FooterProps) {
         </div>
 
         {/* Bottom Copyright & Trust */}
+        {/* Legal Links */}
         <div className="border-t border-slate-900 pt-6 mt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
           <div>
             © {currentYear} Bulkcell Trading Company. All rights reserved.
           </div>
-          <div className="flex items-center gap-6">
-            <span>100% Certified Authentic Devices</span>
-            <span>Nigeria-wide Secure Delivery</span>
+          <div className="flex items-center gap-4 sm:gap-6">
+            <button onClick={() => handleNavClick('privacy')} className="hover:text-blue-400 transition-colors cursor-pointer">
+              Privacy Policy
+            </button>
+            <button onClick={() => handleNavClick('terms')} className="hover:text-blue-400 transition-colors cursor-pointer">
+              Terms & Conditions
+            </button>
+            <button onClick={() => handleNavClick('returns')} className="hover:text-blue-400 transition-colors cursor-pointer">
+              Returns Policy
+            </button>
+            <button onClick={() => handleNavClick('shipping')} className="hover:text-blue-400 transition-colors cursor-pointer">
+              Shipping Policy
+            </button>
           </div>
         </div>
       </div>
