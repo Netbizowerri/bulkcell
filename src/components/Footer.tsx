@@ -13,7 +13,7 @@ export default function Footer({ setActivePage }: FooterProps) {
   };
 
   return (
-    <footer className="relative bg-slate-950 border-t border-slate-900 text-slate-400 pt-16 pb-8 overflow-hidden">
+    <footer className="relative bg-slate-950 border-t border-slate-900 text-slate-400 py-16 overflow-hidden">
       {/* Ambient background glow */}
       <div className="absolute bottom-0 left-1/4 w-[350px] h-[350px] bg-blue-900/10 rounded-full blur-[120px] pointer-events-none" />
       <div className="absolute top-10 right-1/4 w-[350px] h-[350px] bg-rose-950/10 rounded-full blur-[120px] pointer-events-none" />
@@ -146,7 +146,7 @@ export default function Footer({ setActivePage }: FooterProps) {
         </div>
 
         {/* Bottom Copyright & Trust */}
-        <div className="border-t border-slate-900 pt-8 mt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+        <div className="border-t border-slate-900 pt-6 mt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
           <div>
             © {currentYear} Bulkcell Trading Company. All rights reserved.
           </div>

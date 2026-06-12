@@ -99,9 +99,9 @@ export default function Home({ setActivePage, onSelectBrand, onAddToQuote }: Hom
   return (
     <div className="relative bg-slate-950 text-white min-h-screen overflow-hidden">
       {/* Ambient Neon Background Hues */}
-      <div className="absolute top-[-10%] left-[-10%] w-[600px] h-[600px] bg-blue-900/15 rounded-full blur-[160px] pointer-events-none" />
-      <div className="absolute top-[30%] right-[-10%] w-[600px] h-[600px] bg-rose-900/10 rounded-full blur-[160px] pointer-events-none" />
-      <div className="absolute bottom-[-10%] left-[20%] w-[600px] h-[600px] bg-blue-950/15 rounded-full blur-[160px] pointer-events-none" />
+      <div className="absolute top-0 -left-48 w-[400px] h-[400px] lg:w-[600px] lg:h-[600px] bg-blue-900/15 rounded-full blur-[160px] pointer-events-none" />
+      <div className="absolute top-[30%] -right-48 w-[400px] h-[400px] lg:w-[600px] lg:h-[600px] bg-rose-900/10 rounded-full blur-[160px] pointer-events-none" />
+      <div className="absolute bottom-0 left-[20%] w-[400px] h-[400px] lg:w-[600px] lg:h-[600px] bg-blue-950/15 rounded-full blur-[160px] pointer-events-none" />
 
       {/* 1. Full-bleed Hero Section */}
       <section className="relative isolate min-h-[calc(100vh-112px)] overflow-hidden border-b border-slate-900">
@@ -124,7 +124,7 @@ export default function Home({ setActivePage, onSelectBrand, onAddToQuote }: Hom
                 initial={{ opacity: 0, y: 18 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
-                className="mb-5 text-xs font-extrabold uppercase tracking-[0.35em] text-blue-300"
+                className="mb-5 text-xs font-extrabold uppercase tracking-[0.35em] text-blue-300 hidden sm:block"
               >
                 Pre-Owned From UK, US | Apple · Samsung · HP · Dell | Wholesale/Retail Nigeria
               </motion.p>
@@ -151,7 +151,7 @@ export default function Home({ setActivePage, onSelectBrand, onAddToQuote }: Hom
                 initial={{ opacity: 0, y: 18 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.65, delay: 0.28 }}
-                className="mt-5 max-w-2xl text-base leading-relaxed text-slate-200 sm:text-lg mx-auto lg:mx-0"
+                className="mt-5 max-w-2xl text-base leading-relaxed text-slate-200 sm:text-lg mx-auto lg:mx-0 hidden sm:block"
               >
                  Verified pre-owned UK devices for retail customers, business procurement teams, and bulk resellers. Chat now to confirm today's stock, colors, and wholesale pricing.
               </motion.p>
@@ -216,7 +216,7 @@ export default function Home({ setActivePage, onSelectBrand, onAddToQuote }: Hom
       </section>
 
       {/* 2. Core Authenticity Features */}
-      <section className="py-16 border-t border-b border-slate-900 bg-slate-950/50">
+      <section className="py-20 border-t border-b border-slate-900 bg-slate-950/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-12 space-y-3">
             <span className="text-xs font-bold text-blue-400 uppercase tracking-widest">Pre-Owned from UK, US · The Bulkcell Guarantee</span>
@@ -234,7 +234,7 @@ export default function Home({ setActivePage, onSelectBrand, onAddToQuote }: Hom
               return (
                 <div
                   key={idx}
-                  className={`p-6 bg-slate-900/40 border rounded-2xl transition-all duration-300 group space-y-4 hover:-translate-y-1 ${feat.accent}`}
+                  className={`p-6 bg-slate-900/40 border rounded-2xl transition-all duration-300 group space-y-6 hover:-translate-y-1 ${feat.accent}`}
                 >
                   <div className="p-3.5 bg-slate-950 rounded-xl w-max border border-slate-850 shadow-inner group-hover:scale-105 transition-transform">
                     <Icon className="h-6 w-6 text-blue-400 group-hover:text-rose-500 transition-colors" />
@@ -264,13 +264,13 @@ export default function Home({ setActivePage, onSelectBrand, onAddToQuote }: Hom
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
           {brandShowcases.map((brand, idx) => {
             const Icon = brand.icon;
             return (
               <div
                 key={idx}
-                className={`p-8 bg-gradient-to-b ${brand.bgGradient} border ${brand.borderColor} rounded-3xl relative flex flex-col justify-between h-[360px] group overflow-hidden shadow-xl hover:shadow-blue-950/10`}
+                className={`p-6 bg-gradient-to-b ${brand.bgGradient} border ${brand.borderColor} rounded-3xl relative flex flex-col justify-between h-[360px] group overflow-hidden shadow-xl hover:shadow-blue-950/10`}
               >
                 {/* Glowing circle */}
                 <div className="absolute -bottom-20 -right-20 w-48 h-48 bg-slate-950 rounded-full opacity-40 border border-slate-850" />
@@ -373,7 +373,7 @@ export default function Home({ setActivePage, onSelectBrand, onAddToQuote }: Hom
         <div className="p-8 md:p-16 rounded-3xl bg-gradient-to-br from-slate-900 via-slate-950 to-blue-950 border border-blue-950 relative overflow-hidden">
           <div className="absolute -top-20 -left-20 w-64 h-64 bg-rose-500/5 rounded-full blur-3xl pointer-events-none" />
           
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
             <div className="lg:col-span-7 space-y-6">
               <span className="text-xs font-bold text-rose-500 uppercase tracking-widest flex items-center gap-1">
                 <Award className="h-4.5 w-4.5 text-blue-400" />
@@ -460,7 +460,7 @@ export default function Home({ setActivePage, onSelectBrand, onAddToQuote }: Hom
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
               {
                 quote: 'Bulkcell is the standard for pre-owned UK devices. We ordered 12 units of the Apple iPhone 13 Pro Max for our staff. Every phone arrived in pristine condition, fully tested, and the WhatsApp coordination was fast.',
@@ -484,7 +484,7 @@ export default function Home({ setActivePage, onSelectBrand, onAddToQuote }: Hom
                 rating: 5
               }
             ].map((t, idx) => (
-              <div key={idx} className="p-6 rounded-2xl bg-slate-900/40 border border-slate-850 space-y-4 relative">
+              <div key={idx} className="p-6 rounded-2xl bg-slate-900/40 border border-slate-850 space-y-6 relative">
                 {/* Rating Stars */}
                 <div className="flex items-center gap-1 text-rose-500">
                   {[...Array(t.rating)].map((_, i) => (

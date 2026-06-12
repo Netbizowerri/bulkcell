@@ -89,7 +89,7 @@ export default function QuoteEstimator({
             className="fixed top-0 right-0 bottom-0 w-full max-w-md md:max-w-lg bg-slate-950 border-l border-slate-900 shadow-2xl shadow-blue-900/30 z-50 flex flex-col h-full overflow-hidden"
           >
             {/* Drawer Header */}
-            <div className="p-6 bg-gradient-to-r from-slate-950 to-slate-900 border-b border-slate-800 flex items-center justify-between relative">
+            <div className="p-6 bg-gradient-to-r from-slate-950 to-slate-900 border-b border-slate-800 flex items-center justify-between relative gap-4">
               {/* Corner ambient glow */}
               <div className="absolute -top-10 -right-10 w-32 h-32 bg-rose-500/10 rounded-full blur-2xl pointer-events-none" />
               

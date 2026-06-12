@@ -1,0 +1,57 @@
+# ── Bulkcell Trading Company — .htaccess ──
+
+# Enable rewrites
+RewriteEngine On
+
+# ── SPA fallback — serve index.html for all non-file/non-directory routes ──
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.html [L]
+
+# Security Headers
+<IfModule mod_headers.c>
+  # HSTS — force HTTPS (uncomment when HTTPS is live)
+  # Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+
+  # Prevent MIME-type sniffing
+  Header always set X-Content-Type-Options "nosniff"
+
+  # Prevent clickjacking
+  Header always set X-Frame-Options "SAMEORIGIN"
+
+  # Enable XSS filter in older browsers
+  Header always set X-XSS-Protection "1; mode=block"
+
+  # Referrer policy
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+
+  # Permissions policy — restrict unused APIs
+  Header always set Permissions-Policy "geolocation=(), camera=(), microphone=(), payment=(), usb=()"
+</IfModule>
+
+# Gzip Compression
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json
+</IfModule>
+
+# Cache Control — HTML (no cache since it's a single-file SPA)
+<FilesMatch "\.(html)$">
+  <IfModule mod_headers.c>
+    Header set Cache-Control "no-cache, must-revalidate"
+  </IfModule>
+</FilesMatch>
+
+# Cache Control — static assets (if any)
+<FilesMatch "\.(ico|png|jpg|jpeg|webp|svg|woff2?)$">
+  <IfModule mod_headers.c>
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </IfModule>
+</FilesMatch>
+
+# Block access to sensitive files
+<FilesMatch "\.(env|git|md|lock|json|ts|tsx)$">
+  Require all denied
+</FilesMatch>
+
+# Custom 404 page
+ErrorDocument 404 /

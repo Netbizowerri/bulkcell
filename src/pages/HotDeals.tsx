@@ -4,44 +4,52 @@ import { ChevronRight, Flame, MessageSquare, Sparkles } from 'lucide-react';
 const hotDeals = [
   {
     title: 'HOT DEAL #7',
+    device: 'Samsung Galaxy Fold 4',
     image: 'https://i.ibb.co/vxyzzhw4/Gemini-Generated-Image-yicjqoyicjqoyicj-1.png',
   },
   {
     title: 'HOT DEAL #6',
+    device: 'Samsung Galaxy S22 Ultra',
     image: 'https://i.ibb.co/39jXxJ2Z/Gemini-Generated-Image-rhu83xrhu83xrhu8-1.png',
   },
   {
     title: 'HOT DEAL #5',
+    device: 'Samsung Galaxy M53',
     image: 'https://i.ibb.co/SDFpDBN5/Gemini-Generated-Image-ehjnmsehjnmsehjn-1.png',
   },
   {
     title: 'HOT DEAL #4',
+    device: 'Samsung S22 128GB',
     image: 'https://i.ibb.co/W4KyF01w/Screenshot-2026-02-20-090442.png',
   },
   {
     title: 'HOT DEAL #3',
+    device: 'iPhone 12 128GB',
     image: 'https://i.ibb.co/mV6qPCj9/Screenshot-2026-02-20-090506.png',
   },
   {
     title: 'HOT DEAL #2',
+    device: 'iPhone 11 Pro 64GB',
     image: 'https://i.ibb.co/3y6gCYXN/Screenshot-2026-02-20-090525.png',
   },
   {
     title: 'HOT DEAL #1',
+    device: 'HP EliteBook Revolve 810',
     image: 'https://i.ibb.co/nvPjq8h/Screenshot-2026-02-20-090544.png',
   },
 ];
 
 export default function HotDeals() {
-  const getWhatsAppLink = (dealTitle: string) => {
-    const message = `Hi Bulkcell Trading Company, I want to claim ${dealTitle}. Please confirm if this hot deal is still available.`;
+  const getWhatsAppLink = (dealTitle: string, deviceName?: string) => {
+    const deviceInfo = deviceName ? ` (${deviceName})` : '';
+    const message = `Hi Bulkcell Trading Company, I want to claim ${dealTitle}${deviceInfo}. Please confirm if this hot deal is still available.`;
     return `https://wa.me/2347025002885?text=${encodeURIComponent(message)}`;
   };
 
   return (
-    <div className="relative min-h-screen overflow-hidden bg-slate-950 py-14 text-white">
-      <div className="absolute left-[-10%] top-[-10%] h-[520px] w-[520px] rounded-full bg-blue-900/15 blur-[150px]" />
-      <div className="absolute bottom-0 right-[-10%] h-[520px] w-[520px] rounded-full bg-rose-900/15 blur-[150px]" />
+    <div className="relative min-h-screen overflow-hidden bg-slate-950 py-16 text-white">
+      <div className="absolute -left-48 top-0 h-[400px] w-[400px] lg:h-[520px] lg:w-[520px] rounded-full bg-blue-900/15 blur-[150px]" />
+      <div className="absolute bottom-0 -right-48 h-[400px] w-[400px] lg:h-[520px] lg:w-[520px] rounded-full bg-rose-900/15 blur-[150px]" />
 
       <section className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-3xl space-y-4 text-center">
@@ -74,7 +82,7 @@ export default function HotDeals() {
           </motion.p>
         </div>
 
-        <div className="mt-12 grid grid-cols-1 gap-7 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {hotDeals.map((deal, index) => (
             <motion.article
               key={deal.title}
@@ -97,13 +105,20 @@ export default function HotDeals() {
                 </div>
               </div>
 
-              <div className="space-y-4 p-5">
-                <h2 className="text-xl font-black text-white">{deal.title}</h2>
+              <div className="space-y-6 p-6">
+                <div>
+                  <h2 className="text-xl font-black text-white">{deal.title}</h2>
+                  {deal.device && (
+                    <span className="mt-1 inline-block text-sm font-bold text-blue-400 bg-blue-950/40 border border-blue-900/50 px-3 py-1 rounded-full">
+                      {deal.device}
+                    </span>
+                  )}
+                </div>
                 <p className="text-xs leading-relaxed text-slate-400">
                   Exclusive weekly promotion. Click the button below to claim this deal via WhatsApp.
                 </p>
                 <a
-                  href={getWhatsAppLink(deal.title)}
+                  href={getWhatsAppLink(deal.title, deal.device)}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-blue-600 to-rose-600 px-5 py-3 text-xs font-extrabold uppercase tracking-widest text-white shadow-lg shadow-blue-600/10 transition-all duration-200 hover:from-blue-500 hover:to-rose-500 hover:shadow-rose-500/10"

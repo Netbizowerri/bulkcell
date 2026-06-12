@@ -143,7 +143,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col justify-between bg-slate-950 font-sans text-slate-300 selection:bg-blue-600 selection:text-white">
+    <div className="min-h-screen flex flex-col justify-between bg-slate-950 font-sans text-slate-300 selection:bg-blue-600 selection:text-white overflow-x-hidden max-w-[100vw]">
       
       {/* Main top navigation */}
       <Navbar

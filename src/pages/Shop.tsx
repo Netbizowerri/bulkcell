@@ -70,7 +70,7 @@ export default function Shop({ onAddToQuote, activeTab, setActiveTab }: ShopProp
   }, [searchQuery, activeTab, selectedCategory, sortBy]);
 
   return (
-    <div className="relative bg-slate-950 text-white min-h-screen py-12">
+    <div className="relative bg-slate-950 text-white min-h-screen py-16">
       {/* Ambient Glow Hues */}
       <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-blue-950/20 rounded-full blur-[120px] pointer-events-none" />
       <div className="absolute bottom-20 left-0 w-[400px] h-[400px] bg-rose-950/10 rounded-full blur-[120px] pointer-events-none" />

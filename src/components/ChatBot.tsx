@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Bot, X, MessageSquare } from 'lucide-react';
+import { Bot, X } from 'lucide-react';
 
 // ── Types ──
 interface ChatMessage {
@@ -51,13 +51,6 @@ const ACTIONS: Record<ChatMode, ActionDef[]> = {
     { label: '📱 Looking for Samsung Galaxy?', mode: 'samsung' },
     { label: '💻 HP laptop options?', mode: 'hp' },
     { label: '💻 Dell laptop options?', mode: 'dell' },
-    { label: '🔥 Any hot deals right now?', mode: 'hotdeals' },
-    { label: '📍 Where is your office?', mode: 'office' },
-    { label: '📦 How do I place an order?', mode: 'ordering' },
-    { label: '📦 Bulk/wholesale pricing?', mode: 'wholesale' },
-    { label: '🚚 Do you deliver?', mode: 'delivery' },
-    { label: '✅ What about device condition?', mode: 'condition' },
-    { label: '📞 Contact information?', mode: 'contact' },
   ],
   apple: [
     { label: '🔙 Main Menu', mode: 'main' },
@@ -494,6 +487,7 @@ export default function ChatBot({ isOpen, onClose }: ChatBotProps) {
     { role: 'bot', text: KNOWLEDGE.main },
   ]);
   const [mode, setMode] = useState<ChatMode>('main');
+  const [inputMessage, setInputMessage] = useState('');
   const listRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -514,6 +508,68 @@ export default function ChatBot({ isOpen, onClose }: ChatBotProps) {
   };
 
   const currentActions = ACTIONS[mode];
+
+  const handleSendMessage = () => {
+    const text = inputMessage.trim();
+    if (!text) return;
+    setInputMessage('');
+
+    const userMsg: ChatMessage = { role: 'user', text };
+    setMessages((prev) => [...prev, userMsg]);
+
+    const lower = text.toLowerCase();
+    let botResponse = '';
+
+    if (lower.includes('iphone') || lower.includes('apple') || lower.includes('ios')) {
+      botResponse = KNOWLEDGE.apple;
+      setMode('apple');
+    } else if (lower.includes('samsung') || lower.includes('galaxy') || lower.includes('android')) {
+      botResponse = KNOWLEDGE.samsung;
+      setMode('samsung');
+    } else if (lower.includes('hp') || lower.includes('elitebook') || lower.includes('probook')) {
+      botResponse = KNOWLEDGE.hp;
+      setMode('hp');
+    } else if (lower.includes('dell') || lower.includes('latitude')) {
+      botResponse = KNOWLEDGE.dell;
+      setMode('dell');
+    } else if (lower.includes('hot') || lower.includes('deal') || lower.includes('promo')) {
+      botResponse = KNOWLEDGE.hotdeals;
+      setMode('hotdeals');
+    } else if (lower.includes('location') || lower.includes('address') || lower.includes('office') || lower.includes('ikeja') || lower.includes('plaza')) {
+      botResponse = KNOWLEDGE.office;
+      setMode('office');
+    } else if (lower.includes('order') || lower.includes('buy') || lower.includes('purchase')) {
+      botResponse = KNOWLEDGE.ordering;
+      setMode('ordering');
+    } else if (lower.includes('wholesale') || lower.includes('bulk')) {
+      botResponse = KNOWLEDGE.wholesale;
+      setMode('wholesale');
+    } else if (lower.includes('delivery') || lower.includes('shipping') || lower.includes('dispatch')) {
+      botResponse = KNOWLEDGE.delivery;
+      setMode('delivery');
+    } else if (lower.includes('condition') || lower.includes('grade') || lower.includes('quality') || lower.includes('battery')) {
+      botResponse = KNOWLEDGE.condition;
+      setMode('condition');
+    } else if (lower.includes('contact') || lower.includes('phone') || lower.includes('call') || lower.includes('number') || lower.includes('whatsapp') || lower.includes('email')) {
+      botResponse = KNOWLEDGE.contact;
+      setMode('contact');
+    } else if (lower.includes('price') || lower.includes('cost') || lower.includes('how much')) {
+      botResponse = KNOWLEDGE.pricing;
+      setMode('pricing');
+    } else {
+      botResponse = `I'm not sure about that yet — let me connect you to our team!\n\n📞 *Call or WhatsApp us:*\n• Sales: 07025002885\n• Wholesale: 08060125762\n\nOr tap a button above to browse our pre-owned UK/US devices.`;
+      setMode('main');
+    }
+
+    setMessages((prev) => [...prev, { role: 'bot', text: botResponse }]);
+  };
+
+  const handleKeyDown = (e: React.KeyboardEvent) => {
+    if (e.key === 'Enter' && !e.shiftKey) {
+      e.preventDefault();
+      handleSendMessage();
+    }
+  };
 
   const resetChat = () => {
     setMessages([{ role: 'bot', text: KNOWLEDGE.main }]);
@@ -544,12 +600,12 @@ export default function ChatBot({ isOpen, onClose }: ChatBotProps) {
             {/* ── Header ── */}
             <div className="flex items-center justify-between px-5 py-4 border-b border-slate-800 bg-gradient-to-r from-slate-900 to-slate-950 shrink-0">
               <div className="flex items-center gap-2.5">
-                <div className="p-1.5 rounded-lg bg-gradient-to-br from-blue-600 to-rose-600">
-                  <Bot className="h-4 w-4 text-white" />
+                <div className="p-2 rounded-lg bg-gradient-to-br from-blue-600 to-rose-600">
+                  <Bot className="h-5 w-5 text-white" />
                 </div>
                 <div>
-                  <span className="text-white font-extrabold text-sm tracking-wide">MONDOAI</span>
-                  <span className="block text-[10px] text-slate-500 font-medium">Pre-Owned Device Expert</span>
+                  <span className="text-white font-extrabold text-base tracking-wide">MONDOAI</span>
+                  <span className="block text-xs text-slate-500 font-medium">Pre-Owned Device Expert</span>
                 </div>
               </div>
               <div className="flex items-center gap-1">
@@ -576,7 +632,7 @@ export default function ChatBot({ isOpen, onClose }: ChatBotProps) {
               {messages.map((msg, i) => (
                 <div key={i} className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}>
                   <div
-                    className={`max-w-[90%] rounded-2xl px-4 py-3 text-xs leading-relaxed whitespace-pre-wrap ${
+                    className={`max-w-[90%] rounded-2xl px-4 py-3 text-sm leading-relaxed whitespace-pre-wrap ${
                       msg.role === 'user'
                         ? 'bg-gradient-to-r from-blue-600 to-rose-600 text-white rounded-tr-md'
                         : 'bg-slate-900 border border-slate-800 text-slate-200 rounded-tl-md'
@@ -595,7 +651,7 @@ export default function ChatBot({ isOpen, onClose }: ChatBotProps) {
                   <button
                     key={action.mode}
                     onClick={() => handleAction(action.mode)}
-                    className="text-[10px] font-bold px-3 py-1.5 rounded-full border transition-all cursor-pointer bg-slate-900 border-slate-800 text-slate-300 hover:bg-blue-600 hover:text-white hover:border-blue-500"
+                    className="text-[13px] font-bold px-3.5 py-2 rounded-full border transition-all cursor-pointer bg-slate-900 border-slate-800 text-slate-300 hover:bg-blue-600 hover:text-white hover:border-blue-500"
                   >
                     {action.label}
                   </button>
@@ -603,16 +659,29 @@ export default function ChatBot({ isOpen, onClose }: ChatBotProps) {
               </div>
             </div>
 
-            {/* ── Footer ── */}
-            <div className="px-5 pb-3 shrink-0">
-              <div className="flex items-center gap-2 bg-slate-900/50 border border-slate-800 rounded-xl px-4 py-2.5">
-                <MessageSquare className="h-3.5 w-3.5 text-slate-500 shrink-0" />
-                <p className="text-[10px] text-slate-500">
-                  Tap any button above for instant info. Need more help? Call <span className="text-blue-400 font-bold">07025002885</span>
-                </p>
+            {/* ── Chat Input ── */}
+            <div className="px-4 py-3 shrink-0 border-t border-slate-800 bg-slate-900/50">
+              <div className="flex items-center gap-2">
+                <input
+                  type="text"
+                  value={inputMessage}
+                  onChange={(e) => setInputMessage(e.target.value)}
+                  onKeyDown={handleKeyDown}
+                  placeholder="Type your question here..."
+                  className="flex-1 bg-slate-950 border border-slate-700 rounded-xl px-4 py-2.5 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-blue-500 transition-colors"
+                />
+                <button
+                  onClick={handleSendMessage}
+                  disabled={!inputMessage.trim()}
+                  className="p-2.5 rounded-xl bg-gradient-to-r from-blue-600 to-rose-600 hover:from-blue-500 hover:to-rose-500 text-white disabled:opacity-40 disabled:cursor-not-allowed transition-all cursor-pointer shrink-0"
+                >
+                  <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 19V5m0 0l-7 7m7-7l7 7" />
+                  </svg>
+                </button>
               </div>
-              <p className="text-[9px] text-slate-600 mt-1.5 text-center">
-                MONDOAI — Pre-Owned Device Expert
+              <p className="text-[11px] text-slate-600 mt-1.5 text-center">
+                Or tap a button above — MONDOAI Pre-Owned Device Expert
               </p>
             </div>
           </motion.div>

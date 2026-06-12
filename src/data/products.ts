@@ -134,7 +134,7 @@ const productSeeds: ProductSeed[] = [
   { id: 'samsung-galaxy-z-fold-4', name: 'Samsung Galaxy Z Fold 4', brand: 'Samsung', category: 'Smartphones', reviews: 65, isTrending: true, colors: ['Graygreen', 'Phantom Black', 'Beige'], origin: 'UK' },
 
   // HP - laptops
-  { id: 'hp-elitebook-840-g3', name: 'HP EliteBook 840 G3', brand: 'HP', category: 'Laptops', reviews: 70, isTrending: true, colors: ['Silver'], origin: 'UK' },
+  { id: 'hp-elitebook-840-g3', name: 'HP EliteBook 840 G3', brand: 'HP', category: 'Laptops', reviews: 70, isTrending: true, image: 'https://i.ibb.co/nNndr9C2/Bulkcell-Trading-Company.jpg', colors: ['Silver'], origin: 'UK' },
   { id: 'hp-elitebook-1030-g2-x360', name: 'HP EliteBook 1030 G2 X360', brand: 'HP', category: 'Laptops', reviews: 35, isTrending: true, image: 'https://i.ibb.co/Y4Xm3h66/HP-Elite-Book-1030-G2-X360.jpg', colors: ['Silver'], origin: 'UK' },
   { id: 'hp-elitebook-1030-g2-x360-intel-core', name: 'HP EliteBook 1030 G2 X360 (Intel Core...)', brand: 'HP', category: 'Laptops', reviews: 20, image: 'https://i.ibb.co/s98FHXCx/HP-Elite-Book-1030-G2-X360-Intel-Core-i5-7th-Gen-8-GB-512-GB-SSD.webp', colors: ['Silver'], origin: 'UK' },
   { id: 'hp-elitebook-9470-folio', name: 'HP EliteBook 9470 Folio', brand: 'HP', category: 'Laptops', reviews: 85, image: 'https://i.ibb.co/DFwGcF9/HP-Elite-Book-9470-Folio-Intel-Core-i5-3rd-Gen-8-GB256-GB-SSD.webp', colors: ['Silver'], origin: 'UK' },

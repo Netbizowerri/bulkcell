@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+@layer base {
+  html, body {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100vw;
+  }
+}
+
 @theme {
   --font-size-xs: 0.9375rem;   /* 15px — labels, small metadata */
   --font-size-sm: 1rem;        /* 16px — card body text */

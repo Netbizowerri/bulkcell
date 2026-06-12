@@ -23,24 +23,37 @@ export default function About() {
   return (
     <div className="relative bg-slate-950 text-white min-h-screen py-16 overflow-hidden">
       {/* Ambient Background Hues */}
-      <div className="absolute top-[-5%] left-[-5%] w-[500px] h-[500px] bg-blue-900/10 rounded-full blur-[140px] pointer-events-none" />
-      <div className="absolute bottom-[-5%] right-[-5%] w-[500px] h-[500px] bg-rose-900/10 rounded-full blur-[140px] pointer-events-none" />
+      <div className="absolute top-0 -left-48 w-[350px] h-[350px] lg:w-[500px] lg:h-[500px] bg-blue-900/10 rounded-full blur-[140px] pointer-events-none" />
+      <div className="absolute bottom-0 -right-48 w-[350px] h-[350px] lg:w-[500px] lg:h-[500px] bg-rose-900/10 rounded-full blur-[140px] pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-20 relative z-10">
-        
-        {/* Page Header */}
-        <div className="text-center max-w-3xl mx-auto space-y-4">
-          <span className="text-xs font-bold text-rose-500 uppercase tracking-widest">Who We Are</span>
-          <h1 className="text-4xl font-extrabold sm:text-5xl tracking-tight">
-            About Bulkcell Trading Company
-          </h1>
-          <p className="text-slate-400 text-sm leading-relaxed">
-            Nigeria's trusted source for pre-owned devices from the UK and US — setting the standard for authenticity, transparent pricing, and quality customer care.
-          </p>
+      {/* Hero Section with Image */}
+      <section className="relative isolate min-h-[50vh] flex items-center overflow-hidden border-b border-slate-900 -mt-16 mb-16">
+        <img
+          src="https://i.ibb.co/wh3whZR2/Untitled-design.jpg"
+          alt="Bulkcell Trading Company About"
+          className="absolute inset-0 h-full w-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/80 to-slate-950/20" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_30%,rgba(37,99,235,0.24),transparent_34%),radial-gradient(circle_at_45%_80%,rgba(225,29,72,0.18),transparent_28%)]" />
+        <div className="relative z-10 w-full">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div className="max-w-3xl">
+              <span className="text-xs font-bold text-rose-500 uppercase tracking-widest">Who We Are</span>
+              <h1 className="text-4xl font-extrabold sm:text-5xl tracking-tight text-white mt-4">
+                About Bulkcell Trading Company
+              </h1>
+              <p className="text-slate-400 text-sm leading-relaxed mt-4 max-w-2xl">
+                Nigeria's trusted source for pre-owned devices from the UK and US — setting the standard for authenticity, transparent pricing, and quality customer care.
+              </p>
+            </div>
+          </div>
         </div>
+      </section>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16 relative z-10">
 
         {/* Core Story / Pitch */}
-        <section className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <section className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           <div className="lg:col-span-7 space-y-6">
             <div className="space-y-4">
               <h2 className="text-2xl sm:text-3xl font-black text-white">Our Story</h2>
@@ -97,12 +110,31 @@ export default function About() {
           </div>
         </section>
 
+        {/* Facebook Video Embed */}
+        <section className="text-center space-y-4">
+          <span className="text-xs font-bold text-blue-400 uppercase tracking-widest">Watch Our Story</span>
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-white">Bulkcell in Action</h2>
+          <div className="mx-auto max-w-[476px] rounded-2xl overflow-hidden border border-slate-800 shadow-2xl">
+            <iframe
+              src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fweb.facebook.com%2Fbulkcelltradingcompany%2Fvideos%2F623069273200924%2F&show_text=false&width=476&t=0"
+              width="476"
+              height="476"
+              style={{ border: 'none', overflow: 'hidden' }}
+              scrolling="no"
+              frameBorder={0}
+              allowFullScreen={true}
+              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+              className="w-full"
+            />
+          </div>
+        </section>
+
         {/* Vision & Mission Grid */}
-        <section className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <section className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Vision Panel */}
           <motion.div
             whileHover={{ y: -2 }}
-            className="p-8 rounded-3xl bg-gradient-to-br from-blue-950/40 to-slate-950 border border-blue-900/20 space-y-4 relative overflow-hidden"
+            className="p-6 rounded-3xl bg-gradient-to-br from-blue-950/40 to-slate-950 border border-blue-900/20 space-y-6 relative overflow-hidden"
           >
             <div className="absolute -right-8 -bottom-8 p-6 bg-blue-500/5 rounded-full">
               <Eye className="h-24 w-24 text-blue-500/10" />
@@ -119,7 +151,7 @@ export default function About() {
           {/* Mission Panel */}
           <motion.div
             whileHover={{ y: -2 }}
-            className="p-8 rounded-3xl bg-gradient-to-br from-rose-950/30 to-slate-950 border border-rose-900/20 space-y-4 relative overflow-hidden"
+            className="p-6 rounded-3xl bg-gradient-to-br from-rose-950/30 to-slate-950 border border-rose-900/20 space-y-6 relative overflow-hidden"
           >
             <div className="absolute -right-8 -bottom-8 p-6 bg-rose-500/5 rounded-full">
               <Target className="h-24 w-24 text-rose-500/10" />
@@ -158,7 +190,7 @@ export default function About() {
         </section>
 
         {/* Contact Info reaffirmation inside About page */}
-        <section className="p-8 rounded-3xl bg-slate-900/40 border border-slate-900 text-center space-y-6">
+        <section className="p-6 rounded-3xl bg-slate-900/40 border border-slate-900 text-center space-y-6">
           <h3 className="text-white font-extrabold text-xl">Interested in doing business with us?</h3>
           <p className="text-slate-400 text-xs sm:text-sm max-w-xl mx-auto">
             Get in touch with our wholesale/retail agents directly. Or stop by at Suite A08 Platinum Plaza in Ikeja, Lagos, and inspect our pre-owned UK stock physically!

@@ -78,7 +78,7 @@ export default function ProductCard({ product, onAddToQuote }: ProductCardProps)
         </div>
 
         {/* Info Body */}
-        <div className="p-5 space-y-3">
+        <div className="p-6 space-y-4">
           <div>
             <h3 className="text-white font-bold text-base sm:text-lg group-hover:text-blue-400 transition-colors truncate">
               {product.name}

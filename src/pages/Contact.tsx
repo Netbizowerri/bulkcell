@@ -56,10 +56,10 @@ export default function Contact() {
   ];
 
   return (
-    <div className="relative bg-slate-950 text-white min-h-screen py-12 overflow-hidden">
+    <div className="relative bg-slate-950 text-white min-h-screen py-16 overflow-hidden">
       {/* Background glow spheres */}
-      <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-blue-900/10 rounded-full blur-[140px] pointer-events-none" />
-      <div className="absolute bottom-10 right-1/4 w-[500px] h-[500px] bg-rose-900/10 rounded-full blur-[140px] pointer-events-none" />
+      <div className="absolute top-0 left-1/4 w-[350px] h-[350px] lg:w-[500px] lg:h-[500px] bg-blue-900/10 rounded-full blur-[140px] pointer-events-none" />
+      <div className="absolute bottom-10 right-1/4 w-[350px] h-[350px] lg:w-[500px] lg:h-[500px] bg-rose-900/10 rounded-full blur-[140px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-16">
         
@@ -119,7 +119,7 @@ export default function Contact() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
           
           {/* Form Column (7 cols) */}
-          <div className="lg:col-span-7 bg-slate-900/30 border border-slate-900 rounded-3xl p-6 md:p-8 backdrop-blur-md space-y-6 relative">
+          <div className="lg:col-span-7 bg-slate-900/30 border border-slate-900 rounded-3xl p-6 backdrop-blur-md space-y-6 relative">
             <div className="absolute top-0 right-0 w-32 h-32 bg-blue-500/5 rounded-full blur-2xl pointer-events-none" />
 
             <div className="space-y-1.5 border-b border-slate-900 pb-4">
