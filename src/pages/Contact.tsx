@@ -239,36 +239,31 @@ export default function Contact() {
               </ul>
             </div>
 
-            {/* Simulated Map Graphic */}
-            <div className="p-6 bg-slate-900/40 border border-slate-900 rounded-3xl space-y-3 backdrop-blur-md overflow-hidden relative h-[220px] flex flex-col justify-between">
-              {/* Map background effect */}
-              <div className="absolute inset-0 opacity-20 pointer-events-none bg-[radial-gradient(#3b82f6_1px,transparent_1px)] [background-size:16px_16px]" />
-              
-              {/* Glow point representation Suite A08 */}
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 text-center space-y-2">
-                <div className="relative w-8 h-8 mx-auto flex items-center justify-center bg-rose-500 rounded-full shadow-lg shadow-rose-500/50">
-                  <MapPin className="h-4 w-4 text-white animate-bounce" />
-                  <span className="absolute inset-0 rounded-full bg-rose-500/30 animate-ping" />
+            {/* Live Google Map Embed */}
+            <div className="rounded-3xl overflow-hidden border border-slate-900 shadow-2xl">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.3776!2d3.3487774!3d6.5960606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b9235d6c2b6e7%3A0x8b5c8e5c5b5c5b5c!2sPlatinum%20Plaza!5e0!3m2!1sen!2sng!4v1"
+                width="100%"
+                height="300"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="w-full"
+                title="Bulkcell Trading Company at Platinum Plaza, Ikeja"
+              />
+              <div className="p-4 bg-slate-900/60 border-t border-slate-800 flex flex-col sm:flex-row items-center gap-3">
+                <div className="flex items-center gap-2 text-xs text-slate-400">
+                  <MapPin className="h-4 w-4 text-rose-500 shrink-0" />
+                  <span>Suite A08 Platinum Plaza, Ikeja, Lagos</span>
                 </div>
-                <span className="block text-[9px] font-extrabold uppercase tracking-widest text-white bg-slate-950/90 px-2 py-1 rounded border border-blue-900/40">
-                  Suite A08 Platinum Plaza
-                </span>
-              </div>
-
-              {/* Fake roads lines inside map mockup for sleek tech aesthetic */}
-              <div className="absolute inset-y-0 left-1/3 w-[2px] bg-slate-900" />
-              <div className="absolute inset-x-0 top-1/2 h-[2px] bg-slate-900" />
-              <div className="absolute inset-y-0 right-1/4 w-[2px] bg-slate-900" />
-              
-              <div className="z-10 flex items-center justify-between w-full mt-auto">
-                <span className="text-[9px] font-bold text-slate-500">Computer Village, Ikeja</span>
                 <a
-                  href="https://maps.google.com/?q=Platinum+plaza,+Ikeja,+Lagos"
+                  href="https://www.google.com/maps/dir//Platinum+Plaza+Ikeja+Lagos+Nigeria"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[10px] font-bold text-blue-400 hover:underline flex items-center gap-0.5"
+                  className="ml-auto px-5 py-2 bg-gradient-to-r from-blue-600 to-rose-600 hover:from-blue-500 hover:to-rose-500 text-white text-xs font-extrabold rounded-xl flex items-center gap-2 transition-all shadow-lg"
                 >
-                  Open in Google Maps
+                  Get Directions
                 </a>
               </div>
             </div>
