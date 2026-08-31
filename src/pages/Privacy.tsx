@@ -79,7 +79,7 @@ export default function Privacy() {
             <h2 className="text-xl font-bold text-white">7. Contact Us</h2>
             <p>If you have any questions about this Privacy Policy, please contact us:</p>
             <ul className="list-disc pl-5 space-y-1.5">
-              <li>Email: info@bulkcell.com.ng</li>
+              <li>Email: bulkcell@outlook.com</li>
               <li>Phone: 07025002885</li>
               <li>Address: Suite A08 Platinum Plaza, Ikeja, Lagos, Nigeria</li>
             </ul>

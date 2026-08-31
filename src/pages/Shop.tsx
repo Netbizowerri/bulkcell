@@ -79,12 +79,12 @@ export default function Shop({ onAddToQuote, activeTab, setActiveTab }: ShopProp
         
         {/* Store Header */}
         <div className="text-center max-w-3xl mx-auto mb-12 space-y-3">
-          <span className="text-xs font-bold text-rose-500 uppercase tracking-widest">Pre-Owned from UK · Bulkcell Outlet</span>
+          <span className="text-xs font-bold text-rose-500 uppercase tracking-widest">Foreign Used · Bulkcell Outlet</span>
           <h1 className="text-4xl font-extrabold tracking-tight text-white">
-            Pre-Owned UK Devices Catalog
+            Foreign Used Devices Catalog
           </h1>
           <p className="text-slate-400 text-sm">
-            Browse pre-owned UK and US devices: Apple iPhones, Samsung smartphones, HP laptops, and Dell Latitude laptops — all sourced from the United Kingdom and United States. Mix and match items in your Quote Basket and send your inquiry through WhatsApp.
+            Browse foreign used devices: Apple iPhones, Samsung smartphones, HP laptops, and Dell Latitude laptops. Mix and match items in your Quote Basket and send your inquiry through WhatsApp.
           </p>
         </div>
 
@@ -101,7 +101,7 @@ export default function Shop({ onAddToQuote, activeTab, setActiveTab }: ShopProp
                 type="text"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                placeholder="Search pre-owned devices (e.g., 'iPhone 13 Pro Max', 'Galaxy S22 Ultra', 'HP EliteBook', 'Dell Latitude')..."
+                placeholder="Search devices (e.g., 'iPhone 13 Pro Max', 'Galaxy S22 Ultra', 'HP EliteBook', 'Dell Latitude')..."
                 className="w-full bg-slate-950 border border-slate-850 focus:border-blue-500/60 focus:outline-none rounded-2xl pl-12 pr-4 py-3.5 text-sm placeholder-slate-600 transition-all"
               />
               {searchQuery && (
@@ -177,7 +177,7 @@ export default function Shop({ onAddToQuote, activeTab, setActiveTab }: ShopProp
             <div className="md:col-span-3 space-y-2.5 rounded-2xl border border-slate-850 bg-slate-950 p-4">
               <label className="text-[10px] font-bold text-slate-500 uppercase tracking-wider block">Quote Policy</label>
               <p className="text-xs leading-relaxed text-slate-400">
-                Select pre-owned UK devices and request the current quote via WhatsApp.
+                Select foreign used devices and request the current quote via WhatsApp.
               </p>
             </div>
 
@@ -220,8 +220,8 @@ export default function Shop({ onAddToQuote, activeTab, setActiveTab }: ShopProp
 
         {/* Dynamic Products List Count */}
         <div className="mb-6 flex items-center justify-between text-xs text-slate-500 font-semibold tracking-wider">
-          <span>MATCHED PRE-OWNED DEVICES ({filteredProducts.length})</span>
-          <span>Sourced from UK, US · Certified & tested</span>
+          <span>MATCHED FOREIGN USED DEVICES ({filteredProducts.length})</span>
+          <span>Foreign Used · Certified & tested</span>
         </div>
 
         {/* Products Grid */}
@@ -237,7 +237,7 @@ export default function Shop({ onAddToQuote, activeTab, setActiveTab }: ShopProp
             <div className="space-y-2">
               <h3 className="text-white font-bold text-lg">No Devices Matched Your Criteria</h3>
               <p className="text-slate-500 text-sm max-w-md mx-auto leading-relaxed">
-                We couldn't find any pre-owned devices matching your search. Try resetting your filters or searching for general terms like "iPhone" or "Samsung".
+                We couldn't find any foreign used devices matching your search. Try resetting your filters or searching for general terms like "iPhone" or "Samsung".
               </p>
             </div>
             <button
@@ -267,7 +267,7 @@ export default function Shop({ onAddToQuote, activeTab, setActiveTab }: ShopProp
               Wholesale Orders & Bulk Delivery desks are fully open
             </div>
             <p className="text-xs text-slate-400 max-w-xl leading-relaxed">
-                Looking for specific pre-owned UK/US models not listed here? Contact our Computer Village, Lagos wholesale agents for special requests.
+                Looking for specific foreign used models not listed here? Contact our Computer Village, Lagos wholesale agents for special requests.
               </p>
           </div>
 

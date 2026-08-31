@@ -35,7 +35,7 @@ export default function QuoteEstimator({
   const handleWhatsAppSend = () => {
     if (cart.length === 0) return;
 
-    let message = `*BULKCELL TRADING COMPANY - PRE-OWNED UK QUOTE INQUIRY*\n`;
+    let message = `*BULKCELL TRADING COMPANY - FOREIGN USED QUOTE INQUIRY*\n`;
     message += `==================================\n\n`;
     
     if (clientName.trim()) {
@@ -98,8 +98,8 @@ export default function QuoteEstimator({
                   <ShoppingCart className="h-5 w-5 text-blue-400" />
                 </div>
                 <div>
-                  <h2 className="text-lg font-bold text-white">Pre-Owned Quote Basket</h2>
-                  <p className="text-xs text-slate-500">Build a pre-owned device inquiry for WhatsApp</p>
+                  <h2 className="text-lg font-bold text-white">Quote Basket</h2>
+                  <p className="text-xs text-slate-500">Build a device inquiry for WhatsApp</p>
                 </div>
               </div>
 
@@ -122,7 +122,7 @@ export default function QuoteEstimator({
                   <div>
                     <h3 className="text-slate-300 font-semibold text-base">Your Quote Basket is Empty</h3>
                     <p className="text-slate-500 text-sm mt-1 max-w-xs mx-auto">
-                      Browse the shop and add pre-owned Apple iPhones, Samsung devices, or HP/Dell laptops from the UK and US to build an automated inquiry.
+                      Browse the shop and add Apple iPhones, Samsung devices, or HP/Dell laptops to build an automated inquiry.
                     </p>
                   </div>
                   <button
@@ -138,10 +138,10 @@ export default function QuoteEstimator({
                   <div className="p-4 rounded-xl bg-gradient-to-br from-blue-950/40 to-rose-950/10 border border-blue-900/30 space-y-2">
                     <div className="flex items-center gap-2 text-white font-bold text-xs">
                       <Award className="h-4 w-4 text-rose-500" />
-                      <span>PRE-OWNED · BULK BUYER INQUIRY</span>
+                      <span>FOREIGN USED · BULK BUYER INQUIRY</span>
                     </div>
                     <p className="text-slate-400 text-[11px] leading-relaxed">
-                      Add the pre-owned UK devices, colors, and quantities you need. Bulkcell will confirm availability and send the current quote directly on WhatsApp.
+                      Add the foreign used devices, colors, and quantities you need. Bulkcell will confirm availability and send the current quote directly on WhatsApp.
                     </p>
                   </div>
 
@@ -285,7 +285,7 @@ export default function QuoteEstimator({
                     </span>
                   </div>
                   <p className="text-[10px] text-slate-500 text-right">
-                    Pre-owned UK units · Bulkcell confirms current quote on WhatsApp.
+                    Foreign used units · Bulkcell confirms current quote on WhatsApp.
                   </p>
                 </div>
 

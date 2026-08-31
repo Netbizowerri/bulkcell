@@ -5,8 +5,8 @@ export default function About() {
   const values = [
     {
       icon: ShieldCheck,
-      title: 'Authentic Pre-Owned Hardware',
-      desc: 'We strictly provide certified original pre-owned hardware sourced from the UK and US. Zero refurbished phone component swaps, zero fake screens. Quality that stands the test of time.',
+      title: 'Authentic Foreign Used Hardware',
+      desc: 'We strictly provide certified original foreign used hardware. Zero refurbished phone component swaps, zero fake screens. Quality that stands the test of time.',
     },
     {
       icon: Award,
@@ -43,7 +43,7 @@ export default function About() {
                 About Bulkcell Trading Company
               </h1>
               <p className="text-slate-400 text-sm leading-relaxed mt-4 max-w-2xl">
-                Nigeria's trusted source for pre-owned devices from the UK and US — setting the standard for authenticity, transparent pricing, and quality customer care.
+                Nigeria's trusted source for foreign used devices — setting the standard for authenticity, transparent pricing, and quality customer care.
               </p>
             </div>
           </div>
@@ -58,20 +58,20 @@ export default function About() {
             <div className="space-y-4">
               <h2 className="text-2xl sm:text-3xl font-black text-white">Our Story</h2>
               <p className="text-slate-300 text-sm leading-relaxed">
-                Bulkcell Trading Company has been at the forefront of Nigeria's pre-owned device market, providing quality pre-owned smartphones and laptops sourced from the UK and US to customers across the country. Our journey began with a simple mission: to make quality pre-owned technology accessible and affordable for everyone.
+                Bulkcell Trading Company has been at the forefront of Nigeria's foreign used device market, providing quality foreign used smartphones and laptops to customers across the country. Our journey began with a simple mission: to make quality foreign used technology accessible and affordable for everyone.
               </p>
             </div>
             
             <div className="space-y-4">
               <h2 className="text-2xl sm:text-3xl font-black text-white">Our Vision</h2>
               <p className="text-slate-300 text-sm leading-relaxed">
-                To become Nigeria's most trusted wholesale/retail source for pre-owned Apple iPhones, Samsung Galaxy phones, and laptops from the UK and US, setting the standard for quality, authenticity, and customer service.
+                To become Nigeria's most trusted wholesale/retail source for foreign used Apple iPhones, Samsung Galaxy phones, and laptops, setting the standard for quality, authenticity, and customer service.
               </p>
             </div>
 
             <div className="space-y-4">
               <p className="text-slate-300 text-sm leading-relaxed">
-                We are Nigeria's most trusted wholesale and retail source for pre-owned Apple iPhones, Samsung Galaxy phones, and professional laptops from the UK and US. Our mission is to make quality pre-owned technology accessible to everyone, whether you're a retail customer looking for your next device or a business seeking bulk purchases for resale.
+                We are Nigeria's most trusted wholesale and retail source for foreign used Apple iPhones, Samsung Galaxy phones, and professional laptops. Our mission is to make quality foreign used technology accessible to everyone, whether you're a retail customer looking for your next device or a business seeking bulk purchases for resale.
               </p>
             </div>
             
@@ -90,12 +90,12 @@ export default function About() {
           <div className="lg:col-span-5 relative flex items-center justify-center">
             <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-rose-500/10 rounded-3xl blur-2xl pointer-events-none" />
             <div className="relative w-full aspect-square rounded-3xl border border-slate-850 overflow-hidden shadow-2xl shadow-slate-950 bg-slate-900/60 p-8 space-y-6 flex flex-col justify-center">
-              <span className="text-[9px] font-extrabold uppercase tracking-widest text-rose-500">Pre-Owned Quality Framework</span>
-              <h3 className="text-xl font-extrabold text-white">Our Pre-Owned Grading Guarantee</h3>
+              <span className="text-[9px] font-extrabold uppercase tracking-widest text-rose-500">Foreign Used Quality Framework</span>
+              <h3 className="text-xl font-extrabold text-white">Our Foreign Used Grading Guarantee</h3>
               <ul className="space-y-4 text-xs text-slate-300">
                 <li className="flex items-start gap-3">
                   <span className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-1.5 flex-shrink-0" />
-                  <span><strong>Sourced from UK, US:</strong> Every device sourced from verified UK and US channels.</span>
+                  <span><strong>Foreign Used:</strong> Every device is foreign used.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="w-1.5 h-1.5 rounded-full bg-rose-400 mt-1.5 flex-shrink-0" />
@@ -144,7 +144,7 @@ export default function About() {
             </div>
             <h3 className="text-xl font-extrabold text-white">Our Vision</h3>
             <p className="text-slate-300 text-xs sm:text-sm leading-relaxed">
-              To become Nigeria's most trusted wholesale/retail source for pre-owned Apple iPhones, Samsung Galaxy phones, and laptops from the UK and US, setting the standard for quality, authenticity, and customer service.
+              To become Nigeria's most trusted wholesale/retail source for foreign used Apple iPhones, Samsung Galaxy phones, and laptops, setting the standard for quality, authenticity, and customer service.
             </p>
           </motion.div>
 
@@ -161,7 +161,7 @@ export default function About() {
             </div>
             <h3 className="text-xl font-extrabold text-white">Our Mission</h3>
             <p className="text-slate-300 text-xs sm:text-sm leading-relaxed">
-              We exist to make quality pre-owned technology from the UK and US accessible to everyone. Whether you're a retail customer looking for your next personal upgrade or a growing business seeking bulk purchase tiers for local resale.
+              We exist to make quality foreign used technology accessible to everyone. Whether you're a retail customer looking for your next personal upgrade or a growing business seeking bulk purchase tiers for local resale.
             </p>
           </motion.div>
         </section>
@@ -193,14 +193,14 @@ export default function About() {
         <section className="p-6 rounded-3xl bg-slate-900/40 border border-slate-900 text-center space-y-6">
           <h3 className="text-white font-extrabold text-xl">Interested in doing business with us?</h3>
           <p className="text-slate-400 text-xs sm:text-sm max-w-xl mx-auto">
-            Get in touch with our wholesale/retail agents directly. Or stop by at Suite A08 Platinum Plaza in Ikeja, Lagos, and inspect our pre-owned UK stock physically!
+            Get in touch with our wholesale/retail agents directly. Or stop by at Suite A08 Platinum Plaza in Ikeja, Lagos, and inspect our foreign used stock physically!
           </p>
           <div className="flex flex-wrap justify-center gap-6 pt-2 text-xs">
             <a href="tel:07025002885" className="flex items-center gap-2 text-slate-300 hover:text-blue-400 transition-colors">
               <Phone className="h-4 w-4 text-blue-400" /> 07025002885
             </a>
-            <a href="mailto:info@bulkcell.com.ng" className="flex items-center gap-2 text-slate-300 hover:text-rose-400 transition-colors">
-              <Building2 className="h-4 w-4 text-rose-500" /> info@bulkcell.com.ng
+            <a href="mailto:bulkcell@outlook.com" className="flex items-center gap-2 text-slate-300 hover:text-rose-400 transition-colors">
+              <Building2 className="h-4 w-4 text-rose-500" /> bulkcell@outlook.com
             </a>
             <span className="flex items-center gap-2 text-slate-300">
               <MapPin className="h-4 w-4 text-blue-400" /> Ikeja, Lagos, Nigeria.

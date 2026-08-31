@@ -18,14 +18,14 @@ export default function Returns() {
 
         <div className="space-y-6 text-sm text-slate-300 leading-relaxed">
           <section className="p-6 bg-slate-900/30 border border-slate-900 rounded-2xl space-y-4">
-            <h2 className="text-xl font-bold text-white">1. Pre-Owned Device Policy</h2>
-            <p>At Bulkcell Trading Company, all our devices are pre-owned and sourced from the United Kingdom and United States. Because of the nature of pre-owned electronics, we maintain a transparent policy regarding returns and refunds.</p>
+            <h2 className="text-xl font-bold text-white">1. Foreign Used Device Policy</h2>
+            <p>At Bulkcell Trading Company, all our devices are foreign used. Because of the nature of foreign used electronics, we maintain a transparent policy regarding returns and refunds.</p>
             <p>We encourage all customers to carefully review device descriptions, conditions, and ask any questions via WhatsApp or phone before making a purchase.</p>
           </section>
 
           <section className="p-6 bg-slate-900/30 border border-slate-900 rounded-2xl space-y-4">
             <h2 className="text-xl font-bold text-white">2. Physical Inspection Before Purchase</h2>
-            <p>Customers are welcome to visit our physical outlet at Suite A08 Platinum Plaza, Ikeja, Lagos to inspect devices in person before purchase. This is the best way to verify the condition, cosmetic appearance, and functionality of any pre-owned device.</p>
+            <p>Customers are welcome to visit our physical outlet at Suite A08 Platinum Plaza, Ikeja, Lagos to inspect devices in person before purchase. This is the best way to verify the condition, cosmetic appearance, and functionality of any foreign used device.</p>
             <p>For customers who choose delivery without physical inspection, we recommend reviewing the detailed product descriptions and reaching out via WhatsApp for additional photos or information.</p>
           </section>
 
@@ -46,7 +46,7 @@ export default function Returns() {
             <p>If you receive a device that does not match the description provided or has a verified hardware defect not disclosed before purchase, please contact us within 48 hours of delivery:</p>
             <ul className="list-disc pl-5 space-y-1.5">
               <li>Call or WhatsApp: 07025002885</li>
-              <li>Email: info@bulkcell.com.ng</li>
+              <li>Email: bulkcell@outlook.com</li>
               <li>Visit: Suite A08 Platinum Plaza, Ikeja, Lagos</li>
             </ul>
             <p>We will review your concern and coordinate a resolution, which may include repair, replacement, or refund depending on the specific circumstances.</p>
@@ -58,7 +58,7 @@ export default function Returns() {
             <ul className="list-disc pl-5 space-y-1.5">
               <li>Devices that were physically inspected and approved at our Ikeja outlet before purchase</li>
               <li>Devices damaged after delivery by the customer</li>
-              <li>Devices with cosmetic wear consistent with pre-owned condition as described</li>
+              <li>Devices with cosmetic wear consistent with foreign used condition as described</li>
               <li>Change of mind after purchase</li>
             </ul>
           </section>
@@ -76,7 +76,7 @@ export default function Returns() {
               <li>Phone: 07025002885</li>
               <li>Wholesale Desk: 08060125762</li>
               <li>Support: 07034403659</li>
-              <li>Email: info@bulkcell.com.ng</li>
+              <li>Email: bulkcell@outlook.com</li>
               <li>Address: Suite A08 Platinum Plaza, Ikeja, Lagos, Nigeria</li>
             </ul>
           </section>

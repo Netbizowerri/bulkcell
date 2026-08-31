@@ -162,19 +162,19 @@ const ACTIONS: Record<ChatMode, ActionDef[]> = {
 
 // ── Knowledge Base ──
 const KNOWLEDGE: Record<ChatMode, string> = {
-  main: `Hello! Welcome to Bulkcell Trading Company — I'm MONDOAI, your pre-owned device assistant. 👋
+  main: `Hello! Welcome to Bulkcell Trading Company — I'm MONDOAI, your device assistant. 👋
 
-We specialise in high-quality *pre-owned Apple, Samsung, HP, and Dell devices*, all carefully sourced from the UK and US.
+We specialise in high-quality *foreign used Apple, Samsung, HP, and Dell devices*.
 
 Just tap any of the buttons below and I'll give you the information you need straight away.`,
 
-  apple: `🍎 *Pre-Owned Apple iPhones — Sourced from UK/US*
+  apple: `🍎 *Foreign Used Apple iPhones*
 
-We carry a full range of pre-owned iPhones. All are Grade A+++ with genuine OEM screens and 85%+ battery health.
+We carry a full range of foreign used iPhones. All are Grade A+++ with genuine OEM screens and 85%+ battery health.
 
 👇 *Tap any model for full details:*`,
 
-  apple_iphone13: `🍎 *iPhone 13 Series (Pre-Owned from UK/US)*
+  apple_iphone13: `🍎 *iPhone 13 Series (Foreign Used)*
 
 *Models Available:*
 • iPhone 13 — 6.1" Super Retina XDR, A15 Bionic
@@ -182,15 +182,15 @@ We carry a full range of pre-owned iPhones. All are Grade A+++ with genuine OEM 
 • iPhone 13 Pro — 120Hz ProMotion, 3x telephoto
 • iPhone 13 Pro Max — 6.7" largest, best battery life
 
-*Pre-Owned Condition:*
+*Condition:*
 ✅ Grade A+++ — near-mint cosmetic condition
 ✅ 85%+ minimum battery health
 ✅ 100% original OEM Super Retina XDR displays
-✅ Sourced from UK/US — no refurbished parts
+✅ Foreign used — no refurbished parts
 
 *To check current stock and pricing:* Chat with us on WhatsApp at 07025002885`,
 
-  apple_iphone12: `🍎 *iPhone 12 Series (Pre-Owned from UK/US)*
+  apple_iphone12: `🍎 *iPhone 12 Series (Foreign Used)*
 
 *Models Available:*
 • iPhone 12 — 6.1" OLED, Ceramic Shield, 5G
@@ -198,51 +198,51 @@ We carry a full range of pre-owned iPhones. All are Grade A+++ with genuine OEM 
 • iPhone 12 Pro — LiDAR, Stainless Steel, 2x telephoto
 • iPhone 12 Pro Max — 6.7" largest, best camera system
 
-*Pre-Owned Condition:*
+*Condition:*
 ✅ Grade A+++ with original OEM OLED displays
 ✅ 85%+ battery health minimum
 ✅ All genuine components — no aftermarket parts
-✅ Sourced from verified UK/US channels
+✅ Foreign used
 
 *To order:* WhatsApp 07025002885 for current stock and colors.`,
 
-  apple_iphone11: `🍎 *iPhone 11 Series (Pre-Owned from UK/US)*
+  apple_iphone11: `🍎 *iPhone 11 Series (Foreign Used)*
 
 *Models Available:*
 • iPhone 11 — 6.1" Liquid Retina, A13 Bionic
 • iPhone 11 Pro — 5.8" OLED, triple camera
 • iPhone 11 Pro Max — 6.5" OLED, best battery
 
-*Pre-Owned Condition:*
+*Condition:*
 ✅ Grade A — original displays, minor signs of use
 ✅ 80%+ battery health
 ✅ Full diagnostic testing completed
-✅ UK/US sourced — genuine hardware only
+✅ Foreign used — genuine hardware only
 
 *Check availability:* WhatsApp 07025002885`,
 
-  apple_iphonex: `🍎 *iPhone XR / XS / XS Max (Pre-Owned from UK/US)*
+  apple_iphonex: `🍎 *iPhone XR / XS / XS Max (Foreign Used)*
 
 *Models Available:*
 • iPhone XR — 6.1" Liquid Retina, A12 Bionic, all-day battery
 • iPhone XS — 5.8" OLED, stainless steel frame
 • iPhone XS Max — 6.5" OLED, dual camera system
 
-*Pre-Owned Condition:*
+*Condition:*
 ✅ Grade A or A++ depending on stock batch
 ✅ Original OLED/LCD displays — 100% genuine
 ✅ Tested Face ID, cameras, charging ports
-✅ Sourced from UK/US channels
+✅ Foreign used
 
 *Price and availability:* WhatsApp 07025002885`,
 
-  samsung: `📱 *Pre-Owned Samsung Galaxy — Sourced from UK/US*
+  samsung: `📱 *Foreign Used Samsung Galaxy*
 
-We carry a wide selection of pre-owned Samsung Galaxy devices. All feature original AMOLED displays and are fully tested.
+We carry a wide selection of foreign used Samsung Galaxy devices. All feature original AMOLED displays and are fully tested.
 
 👇 *Tap a model for details:*`,
 
-  samsung_s22: `📱 *Galaxy S22 Ultra (Pre-Owned from UK/US)*
+  samsung_s22: `📱 *Galaxy S22 Ultra (Foreign Used)*
 
 *Key Specs:*
 • 6.8" Dynamic AMOLED 2X, 120Hz
@@ -251,26 +251,26 @@ We carry a wide selection of pre-owned Samsung Galaxy devices. All feature origi
 • Built-in S Pen
 • 5000mAh battery
 
-*Pre-Owned Grade:* A+++ — original AMOLED display, 85%+ battery
-*Sourced from:* UK and US
+*Grade:* A+++ — original AMOLED display, 85%+ battery
+*Condition:* Foreign Used
 
 *Tap "Chat on WhatsApp" to check current stock and pricing.`,
 
-  samsung_s21: `📱 *Galaxy S21 Series (Pre-Owned from UK/US)*
+  samsung_s21: `📱 *Galaxy S21 Series (Foreign Used)*
 
 *Models Available:*
 • Galaxy S21 — 6.2" 120Hz AMOLED, triple camera
 • Galaxy S21+ — 6.7", larger battery
 • Galaxy S21 Ultra — 108MP, S Pen support, 10x optical zoom
 
-*Pre-Owned Condition:*
+*Condition:*
 ✅ Grade A+++ original AMOLED displays
 ✅ 85%+ battery health
-✅ UK/US sourced — fully tested
+✅ Foreign used — fully tested
 
 *WhatsApp 07025002885 to order.*`,
 
-  samsung_note: `📱 *Galaxy Note 20 Series (Pre-Owned from UK/US)*
+  samsung_note: `📱 *Galaxy Note 20 Series (Foreign Used)*
 
 *Models Available:*
 • Note 20 — 6.7" AMOLED, S Pen, 3x zoom
@@ -278,11 +278,11 @@ We carry a wide selection of pre-owned Samsung Galaxy devices. All feature origi
 
 *Perfect for:* Business users who need the S Pen productivity suite.
 
-*Condition:* Pre-Owned Grade A — original AMOLED, S Pen included, 80%+ battery.
+*Condition:* Foreign Used Grade A — original AMOLED, S Pen included, 80%+ battery.
 
-*Sourced from UK/US. WhatsApp 07025002885 for pricing.`,
+*WhatsApp 07025002885 for pricing.`,
 
-  samsung_zfold: `📱 *Galaxy Z Fold 4 (Pre-Owned from UK/US)*
+  samsung_zfold: `📱 *Galaxy Z Fold 4 (Foreign Used)*
 
 *Key Specs:*
 • 7.6" foldable AMOLED main display
@@ -291,17 +291,17 @@ We carry a wide selection of pre-owned Samsung Galaxy devices. All feature origi
 • Multitasking with up to 3 apps
 • S Pen (Fold Edition) support
 
-*Pre-Owned Condition:* Grade A — original foldable display, hinge mechanism fully tested.
+*Condition:* Foreign Used Grade A — original foldable display, hinge mechanism fully tested.
 
-*⚠ Limited stock — sourced from UK/US. WhatsApp 07025002885 for availability.`,
+*⚠ Limited stock. WhatsApp 07025002885 for availability.`,
 
-  hp: `💻 *Pre-Owned HP Professional Laptops — Sourced from UK*
+  hp: `💻 *Foreign Used HP Professional Laptops*
 
-We carry pre-owned HP business laptops selected for students, professionals, and corporate teams.
+We carry foreign used HP business laptops selected for students, professionals, and corporate teams.
 
 👇 *Tap a model for details:*`,
 
-  hp_elitebook: `💻 *HP EliteBook 840 Series (Pre-Owned from UK)*
+  hp_elitebook: `💻 *HP EliteBook 840 Series (Foreign Used)*
 
 *Available Models:*
 • *EliteBook 840 G3* — Intel Core i5/i7, 8–16GB RAM, 256–512GB SSD, 14" FHD
@@ -312,11 +312,11 @@ We carry pre-owned HP business laptops selected for students, professionals, and
 • Students and remote work
 • Resellers looking for bulk business laptops
 
-*Condition:* Pre-Owned, fully tested, original components, sourced from verified UK channels.
+*Condition:* Foreign Used, fully tested, original components.
 
 *WhatsApp 07025002885 for current stock and pricing.`,
 
-  hp_probook: `💻 *HP ProBook 450 G7 (Pre-Owned from UK)*
+  hp_probook: `💻 *HP ProBook 450 G7 (Foreign Used)*
 
 *Key Specs:*
 • 15.6" FHD display
@@ -326,29 +326,29 @@ We carry pre-owned HP business laptops selected for students, professionals, and
 
 *Ideal for:* General business computing, students, and budget-conscious professionals.
 
-*Condition:* Pre-Owned from UK, fully tested, genuine components.
+*Condition:* Foreign Used, fully tested, genuine components.
 
 *Bulk orders available — WhatsApp 07025002885.`,
 
-  dell: `💻 *Pre-Owned Dell Latitude Laptops — Sourced from UK*
+  dell: `💻 *Foreign Used Dell Latitude Laptops*
 
-We carry pre-owned Dell Latitude business laptops for portable productivity.
+We carry foreign used Dell Latitude business laptops for portable productivity.
 
 👇 *Tap a model for details:*`,
 
-  dell_latitude: `💻 *Dell Latitude Series (Pre-Owned from UK)*
+  dell_latitude: `💻 *Dell Latitude Series (Foreign Used)*
 
 *Available Models:*
 • *Latitude 7390* — 13.3" FHD, Intel 8th Gen Core i5/i7, 8–16GB RAM, 256–512GB SSD. Ultra-portable for professionals on the go.
 • *Latitude 7480* — 14" FHD, Intel 7th Gen Core i5/i7, 8–16GB RAM, 256–512GB SSD. Reliable business workhorse.
 
-*Condition:* Pre-Owned, fully tested, sourced from verified UK channels.
+*Condition:* Foreign Used, fully tested.
 
 *Student and corporate bulk discounts available. WhatsApp 07025002885.`,
 
   hotdeals: `🔥 *Hot Deals — Current Promotions*
 
-We run exclusive weekly promotions on select pre-owned UK/US devices. These change regularly and are limited to available stock.
+We run exclusive weekly promotions on select foreign used devices. These change regularly and are limited to available stock.
 
 👇 *How to claim:*
 1. Browse our Hot Deals page on the website
@@ -374,15 +374,15 @@ Sunday: Closed
 • Wholesale: 08060125762
 • Support: 07034403659
 
-*Email:* info@bulkcell.com.ng
+*Email:* bulkcell@outlook.com
 
-You're welcome to visit our showroom to inspect pre-owned devices in person!`,
+You're welcome to visit our showroom to inspect foreign used devices in person!`,
 
   ordering: `📦 *How to Place an Order*
 
 Ordering from Bulkcell is quick and easy:
 
-*Step 1:* Browse our full catalog of pre-owned Apple, Samsung, HP, and Dell devices.
+*Step 1:* Browse our full catalog of foreign used Apple, Samsung, HP, and Dell devices.
 *Step 2:* Add items to your Quote Basket.
 *Step 3:* Tap "Send to WhatsApp" with your quote list.
 *Step 4:* Our team responds with current pricing and availability.
@@ -426,9 +426,9 @@ Suite A08 Platinum Plaza, Ikeja, Lagos.
 *Hours:* Mon – Sat, 9AM – 6PM
 *Delivery coordination:* 07034403659`,
 
-  condition: `✅ *Device Condition — Pre-Owned from UK/US*
+  condition: `✅ *Device Condition — Foreign Used*
 
-All our devices are pre-owned, carefully sourced from the United Kingdom and United States.
+All our devices are foreign used.
 
 *Our Grading Standard:*
 • *Grade A+++ Pristine* — near-mint cosmetic condition
@@ -437,13 +437,13 @@ All our devices are pre-owned, carefully sourced from the United Kingdom and Uni
 • Full diagnostic testing before dispatch
 
 *What we guarantee:*
-✓ Authentic UK/US-sourced hardware
+✓ Authentic hardware
 ✓ No refurbished component swaps
 ✓ Original displays with True Tone (iPhone)
 ✓ Original AMOLED screens (Samsung)
 ✓ Fully tested cameras, ports, and sensors
 
-*Every device is clearly labeled with its origin on our site.`,
+*Every device is clearly labeled on our site.`,
 
   contact: `📞 *Contact Us*
 
@@ -456,7 +456,7 @@ Ikeja, Lagos, Nigeria.
 • Wholesale/Bulk: 08060125762
 • Support/Delivery: 07034403659
 
-*Email:* info@bulkcell.com.ng
+*Email:* bulkcell@outlook.com
 
 *Business Hours:*
 Mon – Sat: 9AM – 6PM
@@ -467,7 +467,7 @@ We're located at Computer Village, Ikeja — feel free to visit!`,
 
   pricing: `💰 *Pricing Information*
 
-Since prices change based on current UK/US market rates and available stock, we provide pricing directly on WhatsApp.
+Since prices change based on current market rates and available stock, we provide pricing directly on WhatsApp.
 
 👇 *Here's how to get a quote:*
 
@@ -557,7 +557,7 @@ export default function ChatBot({ isOpen, onClose }: ChatBotProps) {
       botResponse = KNOWLEDGE.pricing;
       setMode('pricing');
     } else {
-      botResponse = `I'm not sure about that yet — let me connect you to our team!\n\n📞 *Call or WhatsApp us:*\n• Sales: 07025002885\n• Wholesale: 08060125762\n\nOr tap a button above to browse our pre-owned UK/US devices.`;
+      botResponse = `I'm not sure about that yet — let me connect you to our team!\n\n📞 *Call or WhatsApp us:*\n• Sales: 07025002885\n• Wholesale: 08060125762\n\nOr tap a button above to browse our foreign used devices.`;
       setMode('main');
     }
 
@@ -605,7 +605,7 @@ export default function ChatBot({ isOpen, onClose }: ChatBotProps) {
                 </div>
                 <div>
                   <span className="text-white font-extrabold text-base tracking-wide">MONDOAI</span>
-                  <span className="block text-xs text-slate-500 font-medium">Pre-Owned Device Expert</span>
+                  <span className="block text-xs text-slate-500 font-medium">Device Expert</span>
                 </div>
               </div>
               <div className="flex items-center gap-1">
@@ -681,7 +681,7 @@ export default function ChatBot({ isOpen, onClose }: ChatBotProps) {
                 </button>
               </div>
               <p className="text-[11px] text-slate-600 mt-1.5 text-center">
-                Or tap a button above — MONDOAI Pre-Owned Device Expert
+                Or tap a button above — MONDOAI Device Expert
               </p>
             </div>
           </motion.div>

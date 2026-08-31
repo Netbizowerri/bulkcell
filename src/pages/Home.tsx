@@ -35,8 +35,8 @@ export default function Home({ setActivePage, onSelectBrand, onAddToQuote }: Hom
   const brandShowcases = [
     {
       name: 'Apple iPhones',
-      tagline: 'Pre-Owned iOS Flagships from UK, US',
-      desc: 'Trusted pre-owned Apple inventory from UK and US including iPhone X, XS Max, iPhone 11, iPhone 12, and iPhone 13 series with transparent availability.',
+      tagline: 'Foreign Used iOS Flagships',
+      desc: 'Trusted foreign used Apple inventory including iPhone X, XS Max, iPhone 11, iPhone 12, and iPhone 13 series with transparent availability.',
       bgGradient: 'from-blue-950/60 via-slate-950 to-rose-950/20',
       borderColor: 'border-rose-900/30 hover:border-rose-500/50',
       icon: Smartphone,
@@ -45,8 +45,8 @@ export default function Home({ setActivePage, onSelectBrand, onAddToQuote }: Hom
     },
     {
       name: 'Samsung Galaxy',
-      tagline: 'Pre-Owned Android Flagships from UK, US',
-      desc: 'Available pre-owned Samsung stock from UK and US — Galaxy S8 through S22 Ultra, plus Note 20, M53, and Z Fold 4 for business and personal buyers.',
+      tagline: 'Foreign Used Android Flagships',
+      desc: 'Available foreign used Samsung stock — Galaxy S8 through S22 Ultra, plus Note 20, M53, and Z Fold 4 for business and personal buyers.',
       bgGradient: 'from-blue-950/60 via-slate-950 to-blue-900/20',
       borderColor: 'border-blue-900/30 hover:border-blue-500/50',
       icon: Smartphone,
@@ -55,8 +55,8 @@ export default function Home({ setActivePage, onSelectBrand, onAddToQuote }: Hom
     },
     {
       name: 'HP Professional Laptops',
-      tagline: 'Pre-Owned Business Laptops from UK',
-      desc: 'Reliable pre-owned HP EliteBook and ProBook laptops sourced from the UK, selected for students, office teams, resellers, and practical business computing.',
+      tagline: 'Foreign Used Business Laptops',
+      desc: 'Reliable foreign used HP EliteBook and ProBook laptops, selected for students, office teams, resellers, and practical business computing.',
       bgGradient: 'from-slate-950 via-slate-900/50 to-blue-950/30',
       borderColor: 'border-slate-800 hover:border-blue-400/50',
       icon: Laptop,
@@ -65,8 +65,8 @@ export default function Home({ setActivePage, onSelectBrand, onAddToQuote }: Hom
     },
     {
       name: 'Dell Latitude Laptops',
-      tagline: 'Pre-Owned Dell Laptops from UK',
-      desc: 'Pre-owned Dell Latitude 7390 and 7480 laptops sourced from the UK for portable business productivity.',
+      tagline: 'Foreign Used Dell Laptops',
+      desc: 'Foreign used Dell Latitude 7390 and 7480 laptops for portable business productivity.',
       bgGradient: 'from-blue-950/30 via-slate-950 to-slate-900/60',
       borderColor: 'border-blue-900/20 hover:border-blue-400/50',
       icon: Laptop,
@@ -78,8 +78,8 @@ export default function Home({ setActivePage, onSelectBrand, onAddToQuote }: Hom
   const features = [
     {
       icon: ShieldCheck,
-      title: '100% Authentic UK-Sourced Devices',
-      desc: 'Every unit is pre-owned and sourced from verified UK channels. Rigorous hardware and battery checks performed before dispatch.',
+      title: '100% Authentic Foreign Used Devices',
+      desc: 'Every unit is foreign used with rigorous hardware and battery checks performed before dispatch.',
       accent: 'border-blue-500/20 hover:border-blue-500/60'
     },
     {
@@ -126,7 +126,7 @@ export default function Home({ setActivePage, onSelectBrand, onAddToQuote }: Hom
                 transition={{ duration: 0.5 }}
                 className="mb-5 text-xs font-extrabold uppercase tracking-[0.35em] text-blue-300 hidden sm:block"
               >
-                Pre-Owned From UK, US | Apple · Samsung · HP · Dell | Wholesale/Retail Nigeria
+                Foreign Used | Apple · Samsung · HP · Dell | Wholesale/Retail Nigeria
               </motion.p>
 
               <motion.h1
@@ -144,7 +144,7 @@ export default function Home({ setActivePage, onSelectBrand, onAddToQuote }: Hom
                 transition={{ duration: 0.65, delay: 0.18 }}
                 className="mt-6 text-2xl font-extrabold leading-tight text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-white to-rose-300 sm:text-3xl"
               >
-                Pre-Owned iPhones, Samsung Galaxy phones, and HP/Dell laptops sourced from the UK and US.
+                Foreign Used iPhones, Samsung Galaxy phones, and HP/Dell laptops.
               </motion.p>
 
               <motion.p
@@ -153,7 +153,7 @@ export default function Home({ setActivePage, onSelectBrand, onAddToQuote }: Hom
                 transition={{ duration: 0.65, delay: 0.28 }}
                 className="mt-5 max-w-2xl text-base leading-relaxed text-slate-200 sm:text-lg mx-auto lg:mx-0 hidden sm:block"
               >
-                 Verified pre-owned UK devices for retail customers, business procurement teams, and bulk resellers. Chat now to confirm today's stock, colors, and wholesale pricing.
+                 Foreign used devices for retail customers, business procurement teams, and bulk resellers. Chat now to confirm today's stock, colors, and wholesale pricing.
               </motion.p>
 
               <motion.div
@@ -219,12 +219,12 @@ export default function Home({ setActivePage, onSelectBrand, onAddToQuote }: Hom
       <section className="py-20 border-t border-b border-slate-900 bg-slate-950/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-12 space-y-3">
-            <span className="text-xs font-bold text-blue-400 uppercase tracking-widest">Pre-Owned from UK, US · The Bulkcell Guarantee</span>
+            <span className="text-xs font-bold text-blue-400 uppercase tracking-widest">Foreign Used · The Bulkcell Guarantee</span>
             <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
-              Quality Pre-Owned Devices for Lagos & Beyond
+              Quality Foreign Used Devices for Lagos & Beyond
             </h2>
             <p className="text-sm text-slate-400">
-              We source premium pre-owned devices straight from the UK and US. That's why corporate outlets, university campuses, and resellers consistently choose Bulkcell.
+              We supply quality foreign used devices. That's why corporate outlets, university campuses, and resellers consistently choose Bulkcell.
             </p>
           </div>
 
@@ -255,12 +255,12 @@ export default function Home({ setActivePage, onSelectBrand, onAddToQuote }: Hom
       {/* 3. Categorized Brand Showcases */}
       <section className="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
-          <span className="text-xs font-bold text-rose-500 uppercase tracking-widest">Pre-Owned from UK, US — Browse by Brand</span>
+          <span className="text-xs font-bold text-rose-500 uppercase tracking-widest">Browse by Brand</span>
           <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
-            Pre-Owned Devices In Stock
+            Devices In Stock
           </h2>
           <p className="text-sm text-slate-400">
-            Every device listed is pre-owned and sourced from the UK and US. Tap any brand below to browse and inquire via WhatsApp.
+            Tap any brand below to browse and inquire via WhatsApp.
           </p>
         </div>
 
@@ -314,12 +314,12 @@ export default function Home({ setActivePage, onSelectBrand, onAddToQuote }: Hom
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row items-center justify-between mb-12 gap-6">
             <div className="space-y-2 text-center md:text-left">
-              <span className="text-xs font-bold text-blue-400 uppercase tracking-widest">Curated Pre-Owned Collection</span>
+              <span className="text-xs font-bold text-blue-400 uppercase tracking-widest">Curated Collection</span>
               <h2 className="text-3xl font-extrabold text-white">
-                Featured Pre-Owned Models
+                Featured Models
               </h2>
               <p className="text-xs sm:text-sm text-slate-400 max-w-md">
-                Browse pre-owned UK and US devices. Instantly tap "Direct Chat" to buy single items, or add them to your "Quote Basket".
+                Instantly tap "Direct Chat" to buy single items, or add them to your "Quote Basket".
               </p>
             </div>
 
@@ -361,7 +361,7 @@ export default function Home({ setActivePage, onSelectBrand, onAddToQuote }: Hom
               }}
               className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-slate-900 hover:bg-slate-850 text-sm font-bold text-slate-300 hover:text-white border border-slate-800 hover:border-slate-700 transition-colors cursor-pointer"
             >
-               View All Pre-Owned Devices
+               View All Foreign Used Devices
               <ChevronRight className="h-4 w-4 text-rose-500" />
             </button>
           </div>
@@ -377,13 +377,13 @@ export default function Home({ setActivePage, onSelectBrand, onAddToQuote }: Hom
             <div className="lg:col-span-7 space-y-6">
               <span className="text-xs font-bold text-rose-500 uppercase tracking-widest flex items-center gap-1">
                 <Award className="h-4.5 w-4.5 text-blue-400" />
-                Pre-Owned UK & US Devices · Bulk Orders & Campus Packs
+                Foreign Used Devices · Bulk Orders & Campus Packs
               </span>
               <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
-                Scaling Pre-Owned Tech Supply for Nigerian Buyers
+                Scaling Foreign Used Tech Supply for Nigerian Buyers
               </h2>
               <p className="text-sm text-slate-300 leading-relaxed">
-                At Bulkcell Trading Company, our core mission is providing access to quality pre-owned devices from the UK and US. We have served thousands of digital resellers, student bulk co-ops, and corporate office upgrades in Nigeria with our inventory. We provide reliable stock confirmation and direct business support.
+                At Bulkcell Trading Company, our core mission is providing access to quality foreign used devices. We have served thousands of digital resellers, student bulk co-ops, and corporate office upgrades in Nigeria with our inventory. We provide reliable stock confirmation and direct business support.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
@@ -422,12 +422,12 @@ export default function Home({ setActivePage, onSelectBrand, onAddToQuote }: Hom
 
             <div className="lg:col-span-5 p-6 bg-slate-950/80 border border-slate-900 rounded-2xl space-y-4">
               <h3 className="text-white font-bold text-base border-b border-slate-900 pb-3">
-                Why Nigeria Trusts Bulkcell for Pre-Owned Tech
+                Why Nigeria Trusts Bulkcell for Foreign Used Tech
               </h3>
               <ul className="space-y-3 text-xs text-slate-400">
                 <li className="flex items-center gap-2.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-blue-500" />
-                  <span>All devices pre-owned and sourced from the UK and US.</span>
+                  <span>All devices foreign used.</span>
                 </li>
                 <li className="flex items-center gap-2.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-rose-500" />
@@ -453,24 +453,24 @@ export default function Home({ setActivePage, onSelectBrand, onAddToQuote }: Hom
           <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
             <span className="text-xs font-bold text-blue-400 uppercase tracking-widest">Client Success Stories</span>
             <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
-              Trusted for Pre-Owned Devices
+              Trusted for Foreign Used Devices
             </h2>
             <p className="text-sm text-slate-400">
-              We supply pre-owned phones and laptops from the UK and US to computer village stores, campus reps, and retail users all over Nigeria.
+              We supply foreign used phones and laptops to computer village stores, campus reps, and retail users all over Nigeria.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
               {
-                quote: 'Bulkcell is the standard for pre-owned UK devices. We ordered 12 units of the Apple iPhone 13 Pro Max for our staff. Every phone arrived in pristine condition, fully tested, and the WhatsApp coordination was fast.',
+                quote: 'Bulkcell is the standard for foreign used devices. We ordered 12 units of the Apple iPhone 13 Pro Max for our staff. Every phone arrived in pristine condition, fully tested, and the WhatsApp coordination was fast.',
                 author: 'Chinedu O.',
                 role: 'CEO, Sterling Tech Ventures',
                 location: 'Computer Village, Lagos',
                 rating: 5
               },
               {
-                quote: "Buying pre-owned laptops for corporate offices in Nigeria can be risky. Bulkcell provided 6 HP EliteBooks sourced from the UK with fully transparent specs. Safe delivery and amazing communication.",
+                quote: "Buying laptops for corporate offices in Nigeria can be risky. Bulkcell provided 6 HP EliteBooks with fully transparent specs. Safe delivery and amazing communication.",
                 author: 'Amina Y.',
                 role: 'Procurement Officer',
                 location: 'Victoria Island, Lagos',
@@ -514,10 +514,10 @@ export default function Home({ setActivePage, onSelectBrand, onAddToQuote }: Hom
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-rose-500/5 rounded-full blur-3xl pointer-events-none" />
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8 relative z-10">
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-            Ready for a Pre-Owned Device?
+            Ready for a Foreign Used Device?
           </h2>
           <p className="text-sm text-slate-400 max-w-xl mx-auto leading-relaxed">
-            Our store agents are online at Suite A08 Platinum plaza, Ikeja. Browse our pre-owned collection from the UK and US and send your inquiry via WhatsApp today.
+            Our store agents are online at Suite A08 Platinum plaza, Ikeja. Browse our foreign used collection and send your inquiry via WhatsApp today.
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-4">

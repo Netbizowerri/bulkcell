@@ -70,7 +70,7 @@ export default function Contact() {
             Contact Bulkcell Trading Company
           </h1>
           <p className="text-slate-400 text-sm leading-relaxed">
-            Need pre-owned device stock verification or wholesale delivery status? Choose a direct hotline, submit our WhatsApp contact form, or visit us at Computer Village.
+            Need device stock verification or wholesale delivery status? Choose a direct hotline, submit our WhatsApp contact form, or visit us at Computer Village.
           </p>
         </div>
 
@@ -123,7 +123,7 @@ export default function Contact() {
             <div className="absolute top-0 right-0 w-32 h-32 bg-blue-500/5 rounded-full blur-2xl pointer-events-none" />
 
             <div className="space-y-1.5 border-b border-slate-900 pb-4">
-              <h3 className="text-white font-bold text-lg">Pre-Owned UK Quick Inquiry</h3>
+              <h3 className="text-white font-bold text-lg">Quick Inquiry</h3>
               <p className="text-xs text-slate-500">Fill out your details and submit instantly to WhatsApp</p>
             </div>
 
@@ -224,8 +224,8 @@ export default function Contact() {
                 
                 <li className="flex items-center gap-3">
                   <Mail className="h-4.5 w-4.5 text-blue-400" />
-                  <a href="mailto:info@bulkcell.com.ng" className="hover:text-white transition-colors text-slate-300">
-                    info@bulkcell.com.ng
+                  <a href="mailto:bulkcell@outlook.com" className="hover:text-white transition-colors text-slate-300">
+                    bulkcell@outlook.com
                   </a>
                 </li>
 

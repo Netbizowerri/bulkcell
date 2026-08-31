@@ -169,7 +169,7 @@ export default function App() {
       {/* Top active notice strip for business urgency */}
       <div className="bg-gradient-to-r from-blue-950 via-rose-950 to-blue-950 border-b border-slate-900 py-2 px-4 text-center text-[10px] sm:text-xs font-bold tracking-wider text-slate-300 flex items-center justify-center gap-x-6 gap-y-1 flex-wrap">
         <span className="flex items-center gap-1 text-amber-400">
-          <Award className="h-3.5 w-3.5" /> All Devices Pre-Owned & Sourced From UK, US
+          <Award className="h-3.5 w-3.5" /> All Devices Foreign Used
         </span>
         <span className="flex items-center gap-1 text-rose-500">
           <Building className="h-3.5 w-3.5" /> Suite A08 Platinum Plaza, Ikeja Outlet Open

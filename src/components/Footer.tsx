@@ -31,7 +31,7 @@ export default function Footer({ setActivePage }: FooterProps) {
               />
             </div>
             <p className="text-sm text-slate-400 leading-relaxed">
-              Nigeria's trusted source for pre-owned Apple iPhones, Samsung Galaxy phones, HP laptops, and Dell Latitude laptops sourced from the UK and US. We deliver nationwide.
+              Nigeria's trusted source for foreign used Apple iPhones, Samsung Galaxy phones, HP laptops, and Dell Latitude laptops. We deliver nationwide.
             </p>
             <div className="flex items-center gap-3 pt-2">
               <a
@@ -133,8 +133,8 @@ export default function Footer({ setActivePage }: FooterProps) {
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="h-4 w-4 text-rose-500 flex-shrink-0" />
-                <a href="mailto:info@bulkcell.com.ng" className="hover:text-white transition-colors text-slate-300">
-                  info@bulkcell.com.ng
+                <a href="mailto:bulkcell@outlook.com" className="hover:text-white transition-colors text-slate-300">
+                  bulkcell@outlook.com
                 </a>
               </li>
               <li className="flex items-center gap-3 text-xs text-slate-500">

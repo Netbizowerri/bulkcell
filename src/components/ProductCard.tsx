@@ -19,7 +19,7 @@ export default function ProductCard({ product, onAddToQuote }: ProductCardProps)
   };
 
   const handleDirectInquiry = () => {
-    const text = `Hi Bulkcell Trading Company,\nI am interested in the pre-owned unit from ${product.origin}: *${product.name}*.\n- *Condition:* ${product.condition} · Origin: ${product.origin}\n- *Color:* ${selectedColor}\n- *Category:* ${product.category}\n- *Reviews:* ${product.reviews}\n\nIs this model currently available for pickup/delivery at Suite A08 Platinum Plaza, Ikeja? Please send the current quote.`;
+    const text = `Hi Bulkcell Trading Company,\nI am interested in the foreign used unit: *${product.name}*.\n- *Condition:* ${product.condition}\n- *Color:* ${selectedColor}\n- *Category:* ${product.category}\n- *Reviews:* ${product.reviews}\n\nIs this model currently available for pickup/delivery at Suite A08 Platinum Plaza, Ikeja? Please send the current quote.`;
     
     const encoded = encodeURIComponent(text);
     window.open(`https://wa.me/2347025002885?text=${encoded}`, '_blank');
@@ -48,10 +48,10 @@ export default function ProductCard({ product, onAddToQuote }: ProductCardProps)
           {/* Overlay gradient */}
           <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-60" />
 
-          {/* Badge: Pre-Owned / Trending / Brand Tag */}
+          {/* Badge: Foreign Used / Trending / Brand Tag */}
           <div className="absolute top-3 left-3 flex flex-col gap-1.5">
             <span className="text-[9px] font-extrabold uppercase tracking-widest bg-gradient-to-r from-amber-600 to-yellow-600 text-white px-2.5 py-1 rounded-full shadow-md shadow-amber-600/30">
-              Pre-Owned · {product.origin}
+              Foreign Used
             </span>
             {product.isTrending && (
               <span className="text-[9px] font-extrabold uppercase tracking-widest bg-gradient-to-r from-rose-600 to-blue-600 text-white px-2.5 py-1 rounded-full shadow-md shadow-rose-600/30">
@@ -92,13 +92,10 @@ export default function ProductCard({ product, onAddToQuote }: ProductCardProps)
             </p>
           </div>
 
-          {/* Key Specs list - showing condition & origin first */}
+          {/* Key Specs list - showing condition first */}
           <div className="py-2.5 border-t border-b border-slate-900 grid grid-cols-2 gap-y-1.5 gap-x-2 text-[11px] text-slate-400">
             <div className="truncate">
               <span className="text-slate-500 font-medium">Condition:</span> <span className="text-amber-400 font-bold">{product.condition}</span>
-            </div>
-            <div className="truncate">
-              <span className="text-slate-500 font-medium">Origin:</span> <span className="text-blue-400 font-bold">{product.origin}</span>
             </div>
             {Object.entries(product.specifications).slice(2, 5).map(([key, value]) => (
               <div key={key} className="truncate">
@@ -134,7 +131,7 @@ export default function ProductCard({ product, onAddToQuote }: ProductCardProps)
       {/* CTAs */}
       <div className="p-5 pt-0 space-y-4">
         <div className="bg-slate-950 border border-slate-900 rounded-xl p-3">
-          <span className="text-[10px] font-bold uppercase tracking-wider text-slate-500">Pre-Owned UK Unit</span>
+          <span className="text-[10px] font-bold uppercase tracking-wider text-slate-500">Foreign Used Unit</span>
           <p className="mt-1 text-xs font-semibold text-slate-300">
             Chat on WhatsApp for price & current availability.
           </p>

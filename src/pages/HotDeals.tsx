@@ -78,7 +78,7 @@ export default function HotDeals() {
             transition={{ duration: 0.55, delay: 0.18 }}
             className="text-sm leading-relaxed text-slate-400 sm:text-base"
           >
-            Don't miss out on these exclusive pre-owned UK offers.
+            Don't miss out on these exclusive foreign used offers.
           </motion.p>
         </div>
 

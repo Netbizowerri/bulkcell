@@ -14,7 +14,7 @@ export default function Navbar({ activePage, setActivePage, cartCount, setIsCart
 
   const navItems = [
     { id: 'home', label: 'Home', icon: Zap },
-    { id: 'shop', label: 'Shop Pre-Owned', icon: Smartphone },
+    { id: 'shop', label: 'Shop Devices', icon: Smartphone },
     { id: 'hot-deals', label: 'Hot Deals', icon: Flame },
     { id: 'about', label: 'Our Vision', icon: Info },
     { id: 'contact', label: 'Contact Us', icon: Phone },

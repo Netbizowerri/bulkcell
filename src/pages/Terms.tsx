@@ -25,18 +25,18 @@ export default function Terms() {
 
           <section className="p-6 bg-slate-900/30 border border-slate-900 rounded-2xl space-y-4">
             <h2 className="text-xl font-bold text-white">2. Products & Availability</h2>
-            <p>All devices listed on our website are pre-owned and sourced from the United Kingdom and United States unless otherwise stated. Each device is clearly labelled with its origin (UK or US).</p>
+            <p>All devices listed on our website are foreign used unless otherwise stated.</p>
             <ul className="list-disc pl-5 space-y-1.5">
               <li>Product images are for illustration purposes. Actual device condition may vary slightly from the images shown.</li>
               <li>Stock availability is subject to change. We encourage customers to confirm current availability via WhatsApp or phone before visiting our Ikeja outlet.</li>
               <li>We reserve the right to discontinue any product without prior notice.</li>
-              <li>All devices are sold as pre-owned. Device conditions (Grade A+++, Grade A, etc.) are clearly described on each product listing.</li>
+              <li>All devices are sold as foreign used. Device conditions (Grade A+++, Grade A, etc.) are clearly described on each product listing.</li>
             </ul>
           </section>
 
           <section className="p-6 bg-slate-900/30 border border-slate-900 rounded-2xl space-y-4">
             <h2 className="text-xl font-bold text-white">3. Pricing & Payments</h2>
-            <p>Prices displayed on our website are indicative and may change based on current UK/US market rates and available stock. Final pricing is confirmed via WhatsApp or phone during your inquiry.</p>
+            <p>Prices displayed on our website are indicative and may change based on current market rates and available stock. Final pricing is confirmed via WhatsApp or phone during your inquiry.</p>
             <ul className="list-disc pl-5 space-y-1.5">
               <li>All prices are quoted in Nigerian Naira (NGN) unless otherwise agreed.</li>
               <li>Payment terms are discussed and agreed upon during the order confirmation process.</li>
@@ -90,7 +90,7 @@ export default function Terms() {
             <h2 className="text-xl font-bold text-white">10. Contact Information</h2>
             <p>For any questions regarding these Terms & Conditions, please contact us:</p>
             <ul className="list-disc pl-5 space-y-1.5">
-              <li>Email: info@bulkcell.com.ng</li>
+              <li>Email: bulkcell@outlook.com</li>
               <li>Phone: 07025002885</li>
               <li>Address: Suite A08 Platinum Plaza, Ikeja, Lagos, Nigeria</li>
             </ul>

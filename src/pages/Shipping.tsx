@@ -19,7 +19,7 @@ export default function Shipping() {
         <div className="space-y-6 text-sm text-slate-300 leading-relaxed">
           <section className="p-6 bg-slate-900/30 border border-slate-900 rounded-2xl space-y-4">
             <h2 className="text-xl font-bold text-white">1. Delivery Options</h2>
-            <p>We offer the following delivery options for all pre-owned devices purchased from Bulkcell Trading Company:</p>
+            <p>We offer the following delivery options for all devices purchased from Bulkcell Trading Company:</p>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
               <div className="p-4 bg-slate-950/60 border border-slate-800 rounded-xl space-y-2">
                 <h3 className="font-bold text-blue-400 text-sm">Ikeja Pickup</h3>
@@ -91,7 +91,7 @@ export default function Shipping() {
               <li>Phone: 07025002885</li>
               <li>Wholesale Desk: 08060125762</li>
               <li>Support: 07034403659</li>
-              <li>Email: info@bulkcell.com.ng</li>
+              <li>Email: bulkcell@outlook.com</li>
               <li>Address: Suite A08 Platinum Plaza, Ikeja, Lagos, Nigeria</li>
             </ul>
           </section>
